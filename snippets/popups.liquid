@@ -1,0 +1,14 @@
+<div id="eurus-popup" class="fixed duration-500 inset-0 z-[100] pointer-events-none md:block flex flex-col-reverse h-fit top-[unset] md:h-full md:top-0" x-cloak></div>
+{% liquid
+  assign position = settings.position_minimal
+  if settings.lang_direction contains request.locale.iso_code
+    if position == 'left'
+      assign position = 'right'
+    else
+      assign position = 'left'
+    endif
+  endif
+%}
+<div id="popup-minimal-{{ settings.position_minimal }}"
+  class="fixed z-50 bottom-4 md:bottom-8 {{ position }}-4 md:{{ position }}-8 pointer-events-auto {% if position == 'right' %}pl-4 md:pl-8 flex flex-col items-end{% else %}pr-4 md:pr-8{% endif %}"
+></div>

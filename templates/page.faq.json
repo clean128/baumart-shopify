@@ -1,0 +1,378 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": false,
+        "heading_size": 100,
+        "heading_tag": "h1",
+        "show_breadcrumbs": false,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "block-1": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "1. ¿Para qué tipo de uso está recomendado este producto?",
+            "row_content": "<p>Cada producto indica sus aplicaciones recomendadas (hogar, industrial, exterior, interior, etc.) en su ficha técnica.</p><p></p>"
+          }
+        },
+        "block-2": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "2. ¿Este producto sirve para uso exterior o interior?",
+            "row_content": "<p>Revisa las especificaciones del producto para confirmar si es apto para exterior, interior o ambos.</p>"
+          }
+        },
+        "block-3": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "3. ¿Qué rendimiento o cobertura tiene el producto?",
+            "row_content": "<p>El rendimiento aproximado se indica en la descripción y puede variar según la superficie y método de aplicación.</p>"
+          }
+        },
+        "block-4": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "4. ¿Tiene ficha técnica o hoja de seguridad?",
+            "row_content": "<p>Sí. Puedes descargar la Ficha Técnica y Hoja de Seguridad directamente desde la página del producto cuando estén disponibles.</p>"
+          }
+        },
+        "frequently_asked_question_dqkTRm": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "5. ¿Tus productos son libres de crueldad animal?",
+            "row_content": "<p><br/>Sí, todos nuestros productos son libres de crueldad animal. No realizamos pruebas en animales y nos aseguramos de que nuestros proveedores cumplan con los mismos estándares éticos.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "frequently_asked_question_dqkTRm"
+      ],
+      "settings": {
+        "heading": "FAQs de Productos",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "faq_KdyWzh": {
+      "type": "faq",
+      "blocks": {
+        "frequently_asked_question_Q3wVRx": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "1. ¿Cuáles son los plazos de despacho?",
+            "row_content": "<p>Los tiempos de entrega dependen de tu ubicación y se informan antes de finalizar la compra.</p>"
+          }
+        },
+        "frequently_asked_question_GihRtG": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "2. ¿Realizan envíos a todo Chile?",
+            "row_content": "<p>Sí, despachamos a la mayoría de las regiones del país. Algunas zonas pueden tener restricciones.</p><p></p>"
+          }
+        },
+        "frequently_asked_question_KVdWRq": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "3. ¿Cómo puedo hacer seguimiento de mi pedido?",
+            "row_content": "<p>Una vez despachado, recibirás un correo con la información de seguimiento.</p><p></p>"
+          }
+        },
+        "frequently_asked_question_mWddRB": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "4. ¿Qué hago si mi pedido llega dañado o incompleto?",
+            "row_content": "<p>Contáctanos dentro de las primeras 24 horas para poder ayudarte lo antes posible.</p>"
+          }
+        },
+        "frequently_asked_question_6rAH7U": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "5. ¿Puedo devolver un producto?",
+            "row_content": "<p>Sí, siempre que cumpla con nuestras condiciones de devolución y no haya sido usado.</p><p></p>"
+          }
+        },
+        "frequently_asked_question_rqVkkL": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "6. ¿Cuánto demora un reembolso?",
+            "row_content": "<p>Una vez aprobada la devolución, el reembolso se procesa dentro de los plazos informados según el medio de pago.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "frequently_asked_question_Q3wVRx",
+        "frequently_asked_question_GihRtG",
+        "frequently_asked_question_KVdWRq",
+        "frequently_asked_question_mWddRB",
+        "frequently_asked_question_6rAH7U",
+        "frequently_asked_question_rqVkkL"
+      ],
+      "settings": {
+        "heading": "FAQs de Envíos y Devoluciones",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "faq_eAJqxU": {
+      "type": "faq",
+      "blocks": {
+        "frequently_asked_question_pLgxya": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "1. ¿Qué medios de pago aceptan?",
+            "row_content": "<p>Aceptamos tarjetas de crédito, débito y otros medios disponibles al finalizar tu compra.</p>"
+          }
+        },
+        "frequently_asked_question_hqHpCr": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "2. ¿Puedo solicitar factura?",
+            "row_content": "<p>Sí, puedes ingresar tus datos de facturación durante el proceso de compra.</p><p></p>"
+          }
+        },
+        "frequently_asked_question_7qqdD7": {
+          "type": "frequently_asked_question",
+          "settings": {
+            "icon": "faq",
+            "another_icon": "",
+            "custom_icon": "",
+            "heading": "3. ¿Es seguro comprar en Baumart?",
+            "row_content": "<p>Sí. Nuestro sitio cuenta con protocolos de seguridad para proteger tu información.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "frequently_asked_question_pLgxya",
+        "frequently_asked_question_hqHpCr",
+        "frequently_asked_question_7qqdD7"
+      ],
+      "settings": {
+        "heading": "FAQs de Compras y Pagos",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_border": false,
+        "row_background": false,
+        "collapsible": true,
+        "show_view_all": false,
+        "view_all_position": "top",
+        "button_link": "",
+        "open_new_window": false,
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_microdata_schema": false,
+        "desktop_layout": "1",
+        "image_alignment": "left",
+        "desktop_height": "400px",
+        "show_section_divider": false,
+        "make_full_page_width": false,
+        "padding_top": 28,
+        "padding_bottom": 100,
+        "image_alignment_mobile": "left",
+        "mobile_height": "250px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "contact_form_KGFwd7": {
+      "type": "contact-form",
+      "blocks": {
+        "name_AhpjT9": {
+          "type": "name",
+          "settings": {
+            "heading": "Nombre",
+            "mark_as_required": false
+          }
+        },
+        "email_z3yD7e": {
+          "type": "email",
+          "settings": {
+            "heading": "Email"
+          }
+        },
+        "phone_rNQjHC": {
+          "type": "phone",
+          "settings": {
+            "heading": "Número de teléfono",
+            "mark_as_required": false
+          }
+        },
+        "message_6r8bhA": {
+          "type": "message",
+          "settings": {
+            "heading": "Mensaje",
+            "mark_as_required": true
+          }
+        }
+      },
+      "block_order": [
+        "name_AhpjT9",
+        "email_z3yD7e",
+        "phone_rNQjHC",
+        "message_6r8bhA"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "¿Necesitas ayuda adicional?",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "text": "<p>Si no encontraste la respuesta que buscabas, escríbenos a través del formulario y nuestro equipo te ayudará a la brevedad.</p>",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "button_label": "Enviar mensaje",
+        "button_alignment": "center",
+        "success_message": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "show_content": "none",
+        "form_alignment": "left",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "contact_heading": "Contact infomation",
+        "highlight_type_1": "underline",
+        "heading_tag_2": "h2",
+        "infomation": "",
+        "address": "75 9th Ave, New York, NY 10011-7006",
+        "phone_nummber": "+1234567890",
+        "email_address": "info@yourstore.com",
+        "contact_text": "<p>Opening hours</p><p>Mon - Fri, 8:30am - 10:30pm,<br/>Saturday, 8:30am - 10:30pm,<br/>Sunday, 8:30am - 10:30pm</p>",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq",
+    "faq_KdyWzh",
+    "faq_eAJqxU",
+    "contact_form_KGFwd7"
+  ]
+}

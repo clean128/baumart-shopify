@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": true,
+        "heading_size": 170,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "rich_text_8jriLR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_grRBYp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Politicas de privacidad",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "text_UENGX4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>POLÍTICA DE PRIVACIDAD DE BAUMART</strong> </p><p>1. Introducción </p><p>La presente Política de Privacidad describe cómo Baumart SpA (en adelante, “Baumart”, “nosotros” o “nuestro”) recopila, utiliza, almacena y protege los datos personales de los usuarios que acceden al sitio web <a href=\"https://www.baumart.cl/\" target=\"_blank\"><span style=\"text-decoration:underline\">www.baumart.cl</span></a> y realizan compras o interactúan con nuestros servicios. Baumart cumple con la Ley N° 19.628 sobre Protección de la Vida Privada, la normativa del SERNAC y las buenas prácticas de comercio electrónico vigentes en Chile. </p><p>2. Identificación del Responsable del Tratamiento </p><p>Baumart SpA RUT: 77.557.394-5 Dirección: Av. Jorge Alessandri 11491, Ruta 5 / General Velásquez, San Bernardo, Región Metropolitana, Chile Correo para consultas y ejercicio de derechos ARCO: soporte@baumart.cl </p><p>3. Datos Personales que Recopilamos </p><p>3.1 Datos entregados directamente por el usuario </p><p>Nombre y apellido RUT o eRUT (en caso de facturación o retiro en bodega) Dirección de envío Correo electrónico Teléfono Información de pago (procesada por plataformas externas seguras) Datos entregados al registrarse o realizar una compra </p><p>3.2 Datos recopilados automáticamente </p><p>Dirección IP Tipo de navegador y sistema operativo Información de navegación en el Sitio Cookies y tecnologías de seguimiento </p><p>3.3 Datos recopilados en retiro en bodega </p><p>Para fines de seguridad y verificación de identidad: Numero de pedido  Presentación de cédula de identidad o eRUT Fotografía del cliente retirando el producto Registro audiovisual mediante cámaras de seguridad </p><p>4. Finalidades del Tratamiento de Datos </p><p>4.1 Operación del ecommerce </p><p>Procesar compras y pagos Emitir boletas o facturas Gestionar envíos, cambios, devoluciones y garantías Verificar identidad en retiros en bodega Cumplir obligaciones legales y tributarias Prevenir fraudes o actividades ilícitas </p><p>4.2 Marketing y comunicaciones comerciales </p><p>Con autorización del usuario, Baumart podrá utilizar los datos para: Email marketing WhatsApp marketing Remarketing en redes sociales y Google Segmentación de audiencias Flujos automatizados de comunicación Envío de promociones, novedades y ofertas Personalización de la experiencia del usuario El usuario puede solicitar dejar de recibir comunicaciones en cualquier momento. </p><p>4.3 Análisis y mejora del Sitio </p><p>Medición de tráfico Optimización de la experiencia de compra Estadísticas internas </p><p>5. Tecnologías de Seguimiento </p><p>El Sitio utiliza: Meta Pixel Google Analytics Cookies propias y de terceros Herramientas de remarketing y medición El usuario puede gestionar cookies desde su navegador. </p><p>6. Conservación de los Datos </p><p>Los datos se conservarán por el tiempo necesario para cumplir las finalidades descritas y según la normativa chilena. Documentos tributarios (boletas y facturas): 6 años, conforme a exigencias del SII Datos de marketing: hasta que el usuario retire su consentimiento Registros de retiro en bodega y cámaras: según políticas internas de seguridad </p><p>7. Transferencia y Almacenamiento Internacional </p><p>El Sitio opera mediante Shopify, cuyos servidores pueden estar ubicados en Estados Unidos, Canadá, Irlanda u otros países según infraestructura del proveedor. Al utilizar el Sitio, el usuario autoriza el tratamiento y almacenamiento internacional de sus datos bajo estándares de seguridad adecuados. </p><p>8. Proveedores Externos </p><p>Baumart utiliza servicios de terceros para: Procesamiento de pagos (Mercado Pago) Logística y envíos Email marketing y automatización Análisis y remarketing Plataforma de ecommerce (Shopify) Estos proveedores solo acceden a los datos necesarios para cumplir sus funciones y están obligados a protegerlos. </p><p>9. Seguridad de la Información </p><p>Baumart implementa medidas técnicas y organizativas para proteger los datos personales, incluyendo: Cifrado SSL Firewalls Accesos restringidos Protocolos de seguridad en bodega Monitoreo mediante cámaras de vigilancia Aunque ningún sistema es completamente infalible, aplicamos estándares de la industria para minimizar riesgos. </p><p>10. Derechos del Usuario (ARCO) </p><p>El usuario puede ejercer los siguientes derechos: Acceso: conocer qué datos tenemos Rectificación: corregir datos incorrectos Cancelación: solicitar eliminación cuando proceda Oposición: oponerse al uso de datos para fines específicos Retiro del consentimiento: especialmente en marketing Para ejercer estos derechos, debe escribir a soporte@baumart.cl Baumart responderá dentro de los plazos establecidos por la ley chilena. </p><p>11. Menores de Edad </p><p>Al utilizar el Sitio, el usuario declara ser mayor de edad o contar con autorización de un adulto responsable. </p><p>12. Enlaces a Terceros </p><p>El Sitio puede contener enlaces a sitios externos. Baumart no es responsable por sus políticas de privacidad ni por el tratamiento de datos que realicen. </p><p>13. Modificaciones a esta Política </p><p>Baumart podrá actualizar esta Política de Privacidad en cualquier momento. Las modificaciones serán publicadas en el Sitio y entrarán en vigencia desde su publicación. </p><p>14. Contacto </p><p>Para consultas, solicitudes o reclamos relacionados con datos personales: Baumart SpA Correo: soporte@baumart.cl Dirección: Av. Jorge Alessandri 11491, San Bernardo, Región Metropolitana </p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        }
+      },
+      "block_order": [
+        "heading_grRBYp",
+        "text_UENGX4"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "left",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_8jriLR"
+  ]
+}

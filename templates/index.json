@@ -1,0 +1,3565 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "4c9e1af5-c4c0-48cf-b771-49029eedd24f": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_Lf8xbA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Deporte_slider_desktop_76a4b4be-8e2a-4ca5-b1ea-7e8a5ffa34f7.webp",
+            "image_mobile": "shopify://shop_images/Deporte_slider_mobile_d45086de-750e-41e8-9eba-857c7068db9c.webp",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 20,
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Deporte",
+            "highlight_type": "underline",
+            "heading_size": 150,
+            "heading_tag": "h2",
+            "text": "<p>Todo lo que necesitas para rendir al máximo.</p>",
+            "button_label_1": "Ver artículos de deporte",
+            "button_link_1": "shopify://collections/deportes",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "middle-center",
+            "custom_horizontal": 50,
+            "custom_vertical": 50,
+            "alignment": "center",
+            "text_product": "Check out our products:",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "rgba(0,0,0,0)",
+            "color_text": "#ffffff",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_product_card_background": "rgba(0,0,0,0)",
+            "color_product_card_text": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_CUPbgD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Espumas_poliuretano_slider_desktop_1.webp",
+            "image_mobile": "shopify://shop_images/Espumas_poliuretano_slider_desktop_beb1f779-0a39-477f-8881-7c82fba43b8e.webp",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 20,
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Espumas Poliuretano",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "text": "<p>Espumas versátiles para cada proyecto.</p>",
+            "button_label_1": "Ver artículos de espuma",
+            "button_link_1": "shopify://collections/espumas",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "middle-center",
+            "custom_horizontal": 50,
+            "custom_vertical": 50,
+            "alignment": "center",
+            "text_product": "Check out our products:",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_product_card_background": "rgba(0,0,0,0)",
+            "color_product_card_text": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_TWgkN8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Herramientas_YATO_slider_desktop_1.webp",
+            "image_mobile": "shopify://shop_images/Herramientas_YATO_slider_desktop_b31808d2-0c78-4ba3-8244-732c5ca81660.webp",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 20,
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Herramientas",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "text": "<p>Herramientas confiables para cada tarea.</p>",
+            "button_label_1": "Ver artículos de herramientas",
+            "button_link_1": "shopify://collections/herramientas",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "middle-center",
+            "custom_horizontal": 50,
+            "custom_vertical": 50,
+            "alignment": "center",
+            "text_product": "Check out our products:",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_product_card_background": "rgba(0,0,0,0)",
+            "color_product_card_text": "rgba(0,0,0,0)"
+          }
+        },
+        "template--20740642505005__4c9e1af5-c4c0-48cf-b771-49029eedd24f-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Jardin-y-control-de-plagas-slider-desktop.webp",
+            "image_mobile": "shopify://shop_images/Jardin-y-control-de-plagas-slider-desktop_1.webp",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 20,
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": false,
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Jardín y Control de Plagas",
+            "highlight_type": "underline",
+            "heading_size": 200,
+            "heading_tag": "h2",
+            "text": "<p>Soluciones prácticas para cuidar tu espacio verde.</p>",
+            "button_label_1": "Ver artículos de jardín y control de plaga",
+            "button_link_1": "shopify://collections/jardineria",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "middle-left",
+            "custom_horizontal": 0,
+            "custom_vertical": 59,
+            "alignment": "left",
+            "text_product": "Check out our products:",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "#282928",
+            "color_text": "rgba(0,0,0,0)",
+            "color_button": "#e23a3a",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "#000000",
+            "color_text_button_hover": "#ffffff",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_product_card_background": "rgba(0,0,0,0)",
+            "color_product_card_text": "rgba(0,0,0,0)"
+          }
+        },
+        "slide_tLwXaK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Materiales-de-construccion-slider-desktop_1.webp",
+            "image_mobile": "shopify://shop_images/Materiales_de_construccion_slider_mobile.webp",
+            "image_link": "",
+            "open_new_window_image": false,
+            "overlay_opacity": 30,
+            "video_url": "",
+            "video_alt_text": "",
+            "show_sound_control": false,
+            "enable_video_autoplay": true,
+            "mobile_video_url": "",
+            "enable_bakground": false,
+            "subheading": "",
+            "subheading_size": 100,
+            "heading": "Materiales de Construcción",
+            "highlight_type": "underline",
+            "heading_size": 150,
+            "heading_tag": "h2",
+            "text": "<p>Materiales resistentes para proyectos duraderos.</p>",
+            "button_label_1": "Ver artículos de construcción",
+            "button_link_1": "shopify://collections/materiales-de-construccion",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_window_button_2": false,
+            "show_button_style_2": "primary",
+            "content_alignment": "middle-left",
+            "custom_horizontal": 50,
+            "custom_vertical": 50,
+            "alignment": "left",
+            "text_product": "",
+            "list_products": [],
+            "show_rating": false,
+            "open_new_window_product": false,
+            "content_background_color": "#000000",
+            "color_text": "rgba(0,0,0,0)",
+            "color_button": "#101010",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "#ffffff",
+            "color_heading_highlight_light": "#000000",
+            "color_product_card_background": "#dbdbdb",
+            "color_product_card_text": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "slide_Lf8xbA",
+        "slide_CUPbgD",
+        "slide_TWgkN8",
+        "template--20740642505005__4c9e1af5-c4c0-48cf-b771-49029eedd24f-slide-1",
+        "slide_tLwXaK"
+      ],
+      "custom_css": [],
+      "settings": {
+        "show_hero": true,
+        "auto_play": true,
+        "change_slides_speed": 10,
+        "pause_hover": true,
+        "slider_visual": "bars",
+        "show_arrow": false,
+        "image_pagination_background": "rgba(0,0,0,0)",
+        "image_pagination_text": "rgba(0,0,0,0)",
+        "transition_style": "fade",
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": false,
+        "rounded_corner_image": false,
+        "desktop_height": "450",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": false,
+        "rounded_corner_image_mobile": false,
+        "show_content_below_image": false,
+        "mobile_height": "400",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "multicolumn_rxMYDJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_C9L9mz": {
+          "type": "column",
+          "settings": {
+            "icon": "arrow-left",
+            "another_icon": "",
+            "custom_image": "shopify://shop_images/icon-1.png",
+            "custom_icon": "",
+            "title": "Devoluciones Gratis",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Hasta 30 días para cambiar o devolver</p>"
+          }
+        },
+        "column_LEfVGd": {
+          "type": "column",
+          "settings": {
+            "icon": "award",
+            "another_icon": "",
+            "custom_image": "shopify://shop_images/icon-2.png",
+            "custom_icon": "",
+            "title": "Autenticidad Garantizada",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>100% Productos originales</p>"
+          }
+        },
+        "column_ipkiCp": {
+          "type": "column",
+          "settings": {
+            "icon": "lock",
+            "another_icon": "",
+            "custom_image": "shopify://shop_images/icon-3.png",
+            "custom_icon": "",
+            "title": "Compra Protegida",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Transacciones seguras y confiables</p>"
+          }
+        },
+        "column_WRy4pp": {
+          "type": "column",
+          "settings": {
+            "icon": "credit-card",
+            "another_icon": "",
+            "custom_image": "shopify://shop_images/icon-4.png",
+            "custom_icon": "",
+            "title": "Hasta 12 cuotas sin interés",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Con tarjeta de crédito</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_C9L9mz",
+        "column_LEfVGd",
+        "column_ipkiCp",
+        "column_WRy4pp"
+      ],
+      "custom_css": [
+        ".pt-2 {padding-top: 0rem;}"
+      ],
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 200,
+        "heading_tag": "h2",
+        "secondary_background": "section",
+        "border_column": "line_vertical",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 60,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": true,
+        "change_bar_every": 5,
+        "background_color_light": "#000000",
+        "heading_light": "#e23a3a",
+        "text_light": "#ffffff",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "line_border_light": "#545454",
+        "color_icon_light": "#ffffff",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "column_layout_desktop": "lg:w-1/4",
+        "section_height_desktop": "md:py-0",
+        "spacing_desktop": 30,
+        "full_width": true,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "column_layout_mobile": "w-full",
+        "section_height_mobile": "py-0",
+        "spacing_mobile": 0,
+        "full_width_mobile": true,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 12,
+        "padding_bottom_mobile": 12
+      }
+    },
+    "collection_list_kQpQDe": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Ypdrjy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "piscinas"
+          }
+        },
+        "featured_collection_fNEcyg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "herramientas"
+          }
+        },
+        "featured_collection_7q3x6g": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jardineria"
+          }
+        },
+        "featured_collection_33ATfF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pinturas"
+          }
+        },
+        "featured_collection_JKgaqQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "selladores"
+          }
+        },
+        "featured_collection_iFefze": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "control-de-plagas"
+          }
+        },
+        "featured_collection_GHa7fm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "griferia"
+          }
+        },
+        "featured_collection_m4M3rQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hogar"
+          }
+        },
+        "featured_collection_TX3qLQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "deportes"
+          }
+        },
+        "featured_collection_zwjmTf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mascotas"
+          }
+        },
+        "featured_collection_QEFbLj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "electricidad"
+          }
+        },
+        "featured_collection_QBrVyx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cerraduras"
+          }
+        },
+        "featured_collection_zrH8V4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fijaciones"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Ypdrjy",
+        "featured_collection_fNEcyg",
+        "featured_collection_7q3x6g",
+        "featured_collection_33ATfF",
+        "featured_collection_JKgaqQ",
+        "featured_collection_iFefze",
+        "featured_collection_GHa7fm",
+        "featured_collection_m4M3rQ",
+        "featured_collection_TX3qLQ",
+        "featured_collection_zwjmTf",
+        "featured_collection_QEFbLj",
+        "featured_collection_QBrVyx",
+        "featured_collection_zrH8V4"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 70,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "#ffffff",
+        "background_color_dark": "",
+        "collection_metafield": "",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": false,
+        "columns_desktop": 8,
+        "columns_mobile": "2",
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": true,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 68,
+        "padding_bottom": 16,
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "collection_list_kAFYK7": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_eAw8CC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hogar"
+          }
+        },
+        "featured_collection_3Pcr6j": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "herramientas"
+          }
+        },
+        "featured_collection_ViH97C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automotores"
+          }
+        },
+        "featured_collection_XiQem6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jardineria"
+          }
+        },
+        "featured_collection_L4UWHN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "impermebilizantes"
+          }
+        },
+        "featured_collection_wxhbCk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cola-fria"
+          }
+        },
+        "featured_collection_qWURgc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "destapadores"
+          }
+        },
+        "featured_collection_rANYfg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gasfiteria"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_eAw8CC",
+        "featured_collection_3Pcr6j",
+        "featured_collection_ViH97C",
+        "featured_collection_XiQem6",
+        "featured_collection_L4UWHN",
+        "featured_collection_wxhbCk",
+        "featured_collection_qWURgc",
+        "featured_collection_rANYfg"
+      ],
+      "disabled": true,
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 70,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "#ffffff",
+        "background_color_dark": "",
+        "collection_metafield": "",
+        "image_ratio": "square",
+        "title_size": 80,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": false,
+        "columns_desktop": 8,
+        "columns_mobile": "2",
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": true,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 68,
+        "padding_bottom": 16,
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 24,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "featured_collection_6r8bKg": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_DJnHc3": {
+          "type": "collection",
+          "settings": {
+            "collection": "mas-vendidos",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_DJnHc3"
+      ],
+      "settings": {
+        "title": "Más [Vendidos]⚡",
+        "highlight_type": "font_highlight",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 90,
+        "title_style": "capitalize",
+        "title_position": "inline",
+        "tab_button_style": "button",
+        "color_background": "#e23a3a",
+        "color_text": "#282928",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": true,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 3,
+        "columns_desktop": 5,
+        "rows_desktop": 2,
+        "spacing": 20,
+        "full_width": true,
+        "show_section_divider": false,
+        "padding_top": 60,
+        "padding_bottom": 80,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "media_gallery_B3NkJH": {
+      "type": "media-gallery",
+      "blocks": {
+        "media_MeAhdV": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/MARCAS_SHERWIN_900X1180_add33a6f-6587-467d-a3ba-13df443b5f64.webp",
+            "image_link": "shopify://collections/sherwin-williams",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "",
+            "highlight_type": "font_highlight",
+            "title_size": 100,
+            "text": "",
+            "text_size": 130,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Ver Productos",
+            "button_link": "shopify://collections/sherwin-williams",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_JjWBa9": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/MARCAS_YATO_900X1180_6f3a545d-1981-41d5-8f74-0b009b03bdcd.webp",
+            "image_link": "shopify://collections/yato",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "",
+            "highlight_type": "font_highlight",
+            "title_size": 100,
+            "text": "",
+            "text_size": 130,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Ver Productos",
+            "button_link": "shopify://collections/yato",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_7AtWgh": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/MARCAS_TRUPER_900X1180_19d54990-c031-47eb-a24c-b72ebc24b8f8.webp",
+            "image_link": "shopify://collections/truper",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "",
+            "highlight_type": "font_highlight",
+            "title_size": 100,
+            "text": "",
+            "text_size": 130,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Ver Productos",
+            "button_link": "shopify://collections/truper",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_VMjAgc": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/MARCAS-ANASAC-900X1180.webp",
+            "image_link": "shopify://collections/anasac",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "",
+            "highlight_type": "font_highlight",
+            "title_size": 100,
+            "text": "",
+            "text_size": 130,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Ver Productos",
+            "button_link": "shopify://collections/anasac",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "media_MeAhdV",
+        "media_JjWBa9",
+        "media_7AtWgh",
+        "media_VMjAgc"
+      ],
+      "custom_css": [
+        ".x-block-items-media-3 > .rounded-\\[10px\\],.x-block-items-media-2 > .rounded-\\[10px\\],.x-block-items-media-1 > .rounded-\\[10px\\] {border-radius: 0px;}"
+      ],
+      "name": "t:sections.media-gallery.name",
+      "settings": {
+        "heading": "Marcas [100% Originales]",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 4,
+        "spacing": 2,
+        "height_desktop": 230,
+        "keep_ratio_on_different_width": false,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "edge_style": "square",
+        "padding_top": 8,
+        "padding_bottom": 100,
+        "min_columns_mobile": "2",
+        "spacing_mobile": 2,
+        "height_mobile": 120,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": true,
+        "edge_style_mobile": "square",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "featured_collection_79FUmp": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_UzpetU": {
+          "type": "collection",
+          "settings": {
+            "collection": "ofertas-de-verano-1",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_UzpetU"
+      ],
+      "settings": {
+        "title": "Ofertas de [Verano]☀️",
+        "highlight_type": "font_highlight",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 90,
+        "title_style": "capitalize",
+        "title_position": "inline",
+        "tab_button_style": "button",
+        "color_background": "#e23a3a",
+        "color_text": "#282928",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": true,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 5,
+        "rows_desktop": 4,
+        "spacing": 20,
+        "full_width": true,
+        "show_section_divider": false,
+        "padding_top": 12,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "collage_mizmpV": {
+      "type": "collage",
+      "blocks": {
+        "image_pUP6Bg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/FLASH_SALE_DEKSTOP_2400_X_3770.webp",
+            "overlay_opacity": 0,
+            "image_link": "shopify://collections/ofertas",
+            "open_new_window": false,
+            "image_padding": false,
+            "number_of_columns": 3,
+            "number_of_row": 2,
+            "title": "",
+            "highlight_type": "underline",
+            "title_size": 80,
+            "text": "",
+            "text_size": 100,
+            "button_label": "",
+            "button_link": "",
+            "show_button_style": "primary",
+            "open_new_window_button": false,
+            "text_align": "center",
+            "content_position": "center",
+            "title_color": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "video_jULAyY": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "show_sound_control": false,
+            "video_url": "https://www.youtube.com/watch?v=MUskBm2y148",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "number_of_columns": 3,
+            "number_of_row": 2
+          }
+        },
+        "product_FbFJJ8": {
+          "type": "product",
+          "settings": {
+            "product": "placa-ciega-con-soporte-stanford-colores",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        },
+        "product_y9acQG": {
+          "type": "product",
+          "settings": {
+            "product": "espuma-poliuretano-multiuso-805p-750ml-akfix-uso-c-pistola",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        },
+        "product_Dyik4F": {
+          "type": "product",
+          "settings": {
+            "product": "raticida-rastop-pellet-50-g",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        },
+        "product_bNTmk3": {
+          "type": "product",
+          "settings": {
+            "product": "set-extractor-de-pernos-cortados-6-pcs-yato-yt-0590",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        },
+        "product_xRUWRC": {
+          "type": "product",
+          "settings": {
+            "product": "lanco-adhesivo-para-alfombras-y-vinilicos",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        },
+        "product_3MCNjB": {
+          "type": "product",
+          "settings": {
+            "product": "pintura-latex-acrilico-total-rojo",
+            "show_quickview": true,
+            "info_alignment": "center",
+            "desktop_size": "large",
+            "number_of_columns": 1,
+            "number_of_row": 1
+          }
+        }
+      },
+      "block_order": [
+        "image_pUP6Bg",
+        "video_jULAyY",
+        "product_FbFJJ8",
+        "product_y9acQG",
+        "product_Dyik4F",
+        "product_bNTmk3",
+        "product_xRUWRC",
+        "product_3MCNjB"
+      ],
+      "name": "t:sections.collage.name",
+      "settings": {
+        "heading": "Flash Sale [50% OFF]",
+        "highlight_type": "underline",
+        "heading_size": 130,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 6,
+        "spacing": 28,
+        "full_width": true,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "min_columns_mobile": "2",
+        "spacing_mobile": 20,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "featured_collection_EVwEXd": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_7UCnMm": {
+          "type": "collection",
+          "settings": {
+            "collection": "jardineria",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_7UCnMm"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Productos de [Jardinería]🌿",
+        "highlight_type": "font_highlight",
+        "heading_size": 90,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 90,
+        "title_style": "capitalize",
+        "title_position": "inline",
+        "tab_button_style": "button",
+        "color_background": "#e23a3a",
+        "color_text": "#282928",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": true,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 3,
+        "columns_desktop": 5,
+        "rows_desktop": 2,
+        "spacing": 20,
+        "full_width": true,
+        "show_section_divider": false,
+        "padding_top": 76,
+        "padding_bottom": 72,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "products_bundle_fNh8G3": {
+      "type": "products-bundle",
+      "disabled": true,
+      "name": "t:sections.products-bundle.name",
+      "settings": {
+        "heading": "Crea tu [kit de herramientas]",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "description": "Selecciona tus herramientas favoritas y obtén hasta un 30% de descuento al combinar 3 o más productos.",
+        "heading_alignment": "center",
+        "show_discount_value_label": false,
+        "label_type": "rounded",
+        "discount_value_label": "",
+        "discount_value_label_text": "",
+        "button_atb_label": "Añadir al Kit",
+        "collection": "",
+        "product_to_show": 3,
+        "products": [
+          "pistola-de-impacto-clavo-tipo-hilti-calibre-27-pt-950-silenciador",
+          "set-de-llaves-allen-12pcs-pulgada-yato-yt-5837",
+          "tx-frague-impermeable",
+          "lanco-esmalte-al-agua-superior-blanco-mate-y-satin",
+          "rodillo-sintetico-6mm-18cm-lizcal",
+          "rodillo-chiporro-natural-40-mm-profesional-18-cm-lizcal",
+          "set-de-brochas-valkolor-8pzas",
+          "buzo-desechable-coverall-ultra-ligero",
+          "esmalte-al-agua-lanco-seal-coat-3en1-mate-4gl",
+          "sherwin-williams-anticorrosivo-triple-accion-reforzado-1-4-gl",
+          "barniz-marino-tajamar-gl-proteccion-para-madera",
+          "diluyente-sintetico-1-litro-quimica-universal"
+        ],
+        "show_highlighted_features": true,
+        "each_product_can_added_to_bundle_once": false,
+        "minimum_items": 3,
+        "discount_type": "percentage",
+        "discount_value": "",
+        "apply_discount_once_per_order": false,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "summary_layout": "vertical",
+        "summary_position": "right",
+        "bundler_heading": "Selecciona tus productos",
+        "bundler_text": "",
+        "background_color_light": "#f3f3f3",
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "button_light": "#e23a3a",
+        "button_text_light": "rgba(0,0,0,0)",
+        "button_hover_light": "#e23a3a",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "button_dark": "rgba(0,0,0,0)",
+        "button_text_dark": "rgba(0,0,0,0)",
+        "button_hover_dark": "rgba(0,0,0,0)",
+        "button_text_hover_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 68,
+        "padding_bottom": 60,
+        "columns_mobile": "2",
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "logo_list_frUX68": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_NAAG7t": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marca-gasfix-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_EedrUb": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/MARCA-INOXCROM.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_zRAAMJ": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-anasac.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_JWnUY6": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-DragPharma-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_bnjMKG": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-fit-formula.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_XxcYr3": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-momo.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_qVDE88": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-oxyfresh.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_HdfMW6": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-patel.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_ynhXy8": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-proden-plaque-off.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_t3wJiT": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-providus-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_jMragj": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcassercogas.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_Dh6yhX": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-1-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_jA4GKX": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_yPtmNh": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-2-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_hxDkPC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-3-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_3YBjkJ": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_ACEqJE": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-4-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_xXjKcC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-3-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_NAAG7t",
+        "logo_EedrUb",
+        "logo_zRAAMJ",
+        "logo_JWnUY6",
+        "logo_bnjMKG",
+        "logo_XxcYr3",
+        "logo_qVDE88",
+        "logo_HdfMW6",
+        "logo_ynhXy8",
+        "logo_t3wJiT",
+        "logo_jMragj",
+        "logo_Dh6yhX",
+        "logo_jA4GKX",
+        "logo_yPtmNh",
+        "logo_hxDkPC",
+        "logo_3YBjkJ",
+        "logo_ACEqJE",
+        "logo_xXjKcC"
+      ],
+      "disabled": true,
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "corner_image": 0,
+        "show_border": false,
+        "image_ratio": "auto",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_carousel_on_desktop": true,
+        "enable_arrow_mobile": false,
+        "auto_switch_bar": true,
+        "change_bar_every": 4,
+        "show_navigation": true,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_section_divider": false,
+        "spacing": 16,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "layout_mobile": "carousel",
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "logo_list_8DXqDa": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_rmbdWk": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/1_1_95492aba-07e6-4d77-bddd-1fe82acc70d5.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_4Pa74d": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/2_8a6ba70d-fd25-4011-924a-5b94fb34680b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_U4VfFa": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/3_f59de6e9-1c5d-4992-aa66-4922a8b4ebfb.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_BPeYFU": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/4_e4f9fed3-fbe3-460b-bf5f-44414eea4ed3.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_zRpfFG": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/5_e782041a-ab17-4fc9-a0c0-e50b682c993d.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_kmFQt7": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/6_8cf3b48e-68b4-486b-9e1e-558a9dc3aa99.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_iKxJDC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/7_e1deb8f7-5cd5-4366-aad1-5e713fa0530e.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_GGe9LD": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/8_8cecb542-11ce-4a2e-ba06-e417a482d818.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_LwJkCE": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/9_343ca03c-69f5-46e3-a4f1-4efbe653f61f.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_yUXyRY": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/10_2f7dd215-fe84-4abe-9700-8562076827dd.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_Fmb6mF": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/11_4824b92f-9921-4c25-bc03-4c19aa9fe59b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_PFqCBg": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/12_c87be21b-52f6-4d4f-baa0-2a05520e7d1b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_d3LBcn": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/13_adcb527e-e277-4218-8731-d69d54df69eb.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_MrxaGT": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/14_12a6981e-8405-442b-819e-c65101205e87.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_AYywKC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/15_80746b5a-eb4d-4a33-856a-236319e179ee.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_XA9CXn": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/16_0a3de73f-e739-4e9d-9302-9431eaa7a23a.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_defMaF": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/17_e1b0cb12-9fe0-445f-82f9-e394d0ab64c4.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_NVKQda": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/18_1d3467f4-fb3d-48e3-a7e3-023c3dd100ae.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_AYmfVy": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/19_133cc656-d7f8-4324-898b-61e40eb642bb.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_ampy8K": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/20_395d99e0-18f9-48e0-aa59-22e5ba93f133.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_AUrFCe": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/21_04f0039d-fbb4-4e12-9b53-ab79c4b1fd22.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_eEkUUf": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/22_c999082d-7fbc-4be6-91a9-ab0b2940b867.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_Upa8W4": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/23_d8cdefae-dc0a-4a38-918a-471d82c6159b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_WXtXCD": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/24_eca418c6-590b-4b40-927b-13a7350e4c1b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_e6hrE3": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/25_cdd76b5d-38f2-485a-a894-d955c13f682c.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_hBRYTh": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/26_0014390b-2c2e-4b6e-abe4-1d77421a6dd5.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_V6xKWY": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/27_b5658c17-282b-4d1c-a0fa-39672269eca3.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_bKwRWe": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/28_662dfeff-b01c-407f-b522-ee1840d29067.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_4HaNXC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/29_f9022492-9449-47c1-a296-f89ac69581b4.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_nqt7dL": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/30_a79702b8-a029-4378-bc03-08f56842f356.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_nArjNm": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/31_b9c16706-376b-4c32-91b0-c9aaf82d3b54.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_EteFtE": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/32_98e6232f-b024-4b88-ac92-e8b370cee73d.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_nWNfJL": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/33_0541e2a4-e00f-469e-a8f6-8a2aef1a98b1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_UecTkw": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/34_22f12cd1-1f1e-4d23-a895-82e724adaff7.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_QAjFgf": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/35_306517f9-65bf-4291-bdd3-e2e080a8e645.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_zbHq6J": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/36_e60b1195-3120-49f8-a9f5-3bcafe34627d.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_NhVJmc": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/37_40ed7223-97e4-4b8b-97b2-9d38c99ffe92.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_ztBUBQ": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/38_805f6c1a-4ed7-425e-b742-33f2e116af1b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_XLRb4j": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/39_10bcf341-1f14-4877-a745-8fb88b2e946b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_yxMVW4": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/40_12990241-507e-49d9-beb3-110e378435fe.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_wq9HNY": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/41_e1380f9d-26ac-401c-9fdd-98a98ad2e722.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_339pWx": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/42_76a875db-17ff-4751-9e20-5c229769a9c7.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_gYrdGb": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/43_6066a581-839c-4316-8a39-3dd379289707.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_TJjFMy": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/44_420b6868-5204-4168-b71c-0bd9622e8440.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_rWnEiW": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/45_50670540-09cc-4dd6-8703-3f146cb82529.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_6DTtHi": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/46_33a60f29-faef-4e3c-9642-cf310db75a58.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_GFPqpr": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/47_e10aa2d6-7da9-4022-bd6f-20b338d05b4c.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_9dEmxd": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/48_c913b0e2-beb4-4c8e-9d6e-3959b686d88b.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_XP3kyw": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/49_cce57a34-84e7-4e87-855c-082c917e0e16.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_aABLNJ": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/50_92fe1b18-a959-4e1e-88e4-1600357e62b8.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_wKYmt9": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/51_2c9d301c-fafa-499b-8e8d-16a82e1e4c7f.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_XPW46i": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/52_bcf57bda-0af7-4da1-99f4-bde880a45eee.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_YrYw7T": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/53_c66ab0f3-2847-4567-ad2d-d5ea957a439e.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_LxP3Ry": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/54_d0ff5172-b4c5-4c9e-9633-74da24749fb7.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_zLfDiG": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/55_5ef87b58-a13d-458b-b9e8-b9c32bb39237.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_EbEkAD": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/56_0d505c1c-8349-45ec-a43b-cd7a843a1266.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_rmbdWk",
+        "logo_4Pa74d",
+        "logo_U4VfFa",
+        "logo_BPeYFU",
+        "logo_zRpfFG",
+        "logo_kmFQt7",
+        "logo_iKxJDC",
+        "logo_GGe9LD",
+        "logo_LwJkCE",
+        "logo_yUXyRY",
+        "logo_Fmb6mF",
+        "logo_PFqCBg",
+        "logo_d3LBcn",
+        "logo_MrxaGT",
+        "logo_AYywKC",
+        "logo_XA9CXn",
+        "logo_defMaF",
+        "logo_NVKQda",
+        "logo_AYmfVy",
+        "logo_ampy8K",
+        "logo_AUrFCe",
+        "logo_eEkUUf",
+        "logo_Upa8W4",
+        "logo_WXtXCD",
+        "logo_e6hrE3",
+        "logo_hBRYTh",
+        "logo_V6xKWY",
+        "logo_bKwRWe",
+        "logo_4HaNXC",
+        "logo_nqt7dL",
+        "logo_nArjNm",
+        "logo_EteFtE",
+        "logo_nWNfJL",
+        "logo_UecTkw",
+        "logo_QAjFgf",
+        "logo_zbHq6J",
+        "logo_NhVJmc",
+        "logo_ztBUBQ",
+        "logo_XLRb4j",
+        "logo_yxMVW4",
+        "logo_wq9HNY",
+        "logo_339pWx",
+        "logo_gYrdGb",
+        "logo_TJjFMy",
+        "logo_rWnEiW",
+        "logo_6DTtHi",
+        "logo_GFPqpr",
+        "logo_9dEmxd",
+        "logo_XP3kyw",
+        "logo_aABLNJ",
+        "logo_wKYmt9",
+        "logo_XPW46i",
+        "logo_YrYw7T",
+        "logo_LxP3Ry",
+        "logo_zLfDiG",
+        "logo_EbEkAD"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "corner_image": 0,
+        "show_border": false,
+        "image_ratio": "auto",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_carousel_on_desktop": true,
+        "enable_arrow_mobile": false,
+        "auto_switch_bar": true,
+        "change_bar_every": 4,
+        "show_navigation": true,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_section_divider": false,
+        "spacing": 16,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "layout_mobile": "carousel",
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "media_gallery_mTh84Y": {
+      "type": "media-gallery",
+      "blocks": {
+        "media_w38fX3": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Deportes-banner-desktop.webp",
+            "image_mobile": "shopify://shop_images/Deportes_banner_mobile.webp",
+            "image_link": "shopify://collections/deportes",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "overlay_opacity": 40,
+            "number_of_columns": 2,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "Deportes",
+            "title": "Equipamiento deportivo de calidad",
+            "highlight_type": "underline",
+            "title_size": 130,
+            "text": "",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "button_label": "Ver productos de deporte",
+            "button_link": "shopify://collections/deportes",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_pXLkwx": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Selladores-_-adhesivos-banner-desktop.webp",
+            "image_mobile": "shopify://shop_images/Selladores_adhesivos_banner_mobile.webp",
+            "image_link": "shopify://collections/selladores",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "overlay_opacity": 20,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "Selladores profesionales para cada proyecto",
+            "title": "Selladores",
+            "highlight_type": "underline",
+            "title_size": 90,
+            "text": "",
+            "text_size": 90,
+            "text_align": "left",
+            "media_position": "top",
+            "button_label": "Explorar selladores",
+            "button_link": "shopify://collections/selladores",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_NgDbNg": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Mascotas-banner-desktop.webp",
+            "image_mobile": "shopify://shop_images/Mascotas_banner_mobile.webp",
+            "image_link": "shopify://collections/mascotas",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 43,
+            "sub_title": "Mascotas",
+            "title": "Todo para tu mascota",
+            "highlight_type": "underline",
+            "title_size": 90,
+            "text": "",
+            "text_size": 90,
+            "text_align": "left",
+            "media_position": "top",
+            "button_label": "Ver artículos para mascotas",
+            "button_link": "shopify://collections/mascotas",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "#ffffff",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_rRaMX4": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/indoor-plants-studio.jpg",
+            "image_link": "shopify://collections/hogar",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "overlay_opacity": 40,
+            "number_of_columns": 2,
+            "number_of_row": 2,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "Hogar",
+            "title": "Inspírate en tu hogar",
+            "highlight_type": "underline",
+            "title_size": 130,
+            "text": "<p>Encuentra artículos para renovar, <br/>decorar y mantener tu casa con estilo y funcionalidad.</p>",
+            "text_size": 130,
+            "text_align": "left",
+            "media_position": "top",
+            "button_label": "Ver productos de hogar",
+            "button_link": "shopify://collections/hogar",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_pbqTYY": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Mascotas-banner-desktop.webp",
+            "image_mobile": "shopify://shop_images/Mascotas_banner_mobile.webp",
+            "image_link": "shopify://collections/mascotas",
+            "open_new_window": false,
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "center",
+            "overlay_opacity": 0,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 43,
+            "sub_title": "Mascotas",
+            "title": "Todo para tu mascota",
+            "highlight_type": "underline",
+            "title_size": 90,
+            "text": "",
+            "text_size": 90,
+            "text_align": "left",
+            "media_position": "top",
+            "button_label": "Ver artículos para mascotas",
+            "button_link": "shopify://collections/mascotas",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "#ffffff",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "media_w38fX3",
+        "media_pXLkwx",
+        "media_NgDbNg",
+        "media_rRaMX4",
+        "media_pbqTYY"
+      ],
+      "name": "t:sections.media-gallery.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 3,
+        "spacing": 28,
+        "height_desktop": 330,
+        "keep_ratio_on_different_width": true,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "edge_style": "adapt",
+        "padding_top": 48,
+        "padding_bottom": 100,
+        "min_columns_mobile": "1",
+        "spacing_mobile": 16,
+        "height_mobile": 500,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "edge_style_mobile": "adapt",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 52
+      }
+    },
+    "e32885d8-0a8f-4c4f-8801-377d01cb7656": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_DqgeTW": {
+          "type": "collection",
+          "settings": {
+            "collection": "jardineria",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        },
+        "collection_pG6JL6": {
+          "type": "collection",
+          "settings": {
+            "collection": "espumas",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        },
+        "collection_M67DjH": {
+          "type": "collection",
+          "settings": {
+            "collection": "equipo-de-proteccion-personal",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        },
+        "collection_UQnFbC": {
+          "type": "collection",
+          "settings": {
+            "collection": "piscinas",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_DqgeTW",
+        "collection_pG6JL6",
+        "collection_M67DjH",
+        "collection_UQnFbC"
+      ],
+      "settings": {
+        "title": "Categorías [destacadas]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 90,
+        "title_style": "capitalize",
+        "title_position": "inline",
+        "tab_button_style": "button",
+        "color_background": "#e23a3a",
+        "color_text": "#ffffff",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": true,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 5,
+        "rows_desktop": 4,
+        "spacing": 20,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 12,
+        "padding_bottom": 84,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": true,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "shop_the_look_caVzU7": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_7Y4aQK": {
+          "type": "look",
+          "settings": {
+            "product": "set-de-llave-impacto-inalambrica-brushless-850nm-1-2-yato",
+            "products": [],
+            "heading": "",
+            "text": "",
+            "content_alignment": "center",
+            "color_hotspot": "#ffffff",
+            "hotspot_desktop_horizontal": 38,
+            "hotspot_desktop_vertical": 50,
+            "hotspot_mobile_horizontal": 35,
+            "hotspot_mobile_vertical": 47
+          }
+        },
+        "look_b7c7TA": {
+          "type": "look",
+          "settings": {
+            "product": "llave-de-impacto-pistola-inalambrica-18v-1-2-350-nm-yato",
+            "products": [],
+            "heading": "",
+            "text": "",
+            "content_alignment": "center",
+            "color_hotspot": "#ffffff",
+            "hotspot_desktop_horizontal": 85,
+            "hotspot_desktop_vertical": 37,
+            "hotspot_mobile_horizontal": 90,
+            "hotspot_mobile_vertical": 44
+          }
+        }
+      },
+      "block_order": [
+        "look_7Y4aQK",
+        "look_b7c7TA"
+      ],
+      "name": "t:sections.shop_the_look.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "image_desktop": "shopify://shop_images/DESKTOP_2500_X_2500_BANNER_CLICK.webp",
+        "image_ratio": "square",
+        "info_alignment": "left",
+        "show_quickview": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "image_alignment": "left",
+        "product_card_edges": "adapt",
+        "desktop_size": "large",
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "desktop_height": "750px",
+        "padding_top": 28,
+        "padding_bottom": 100,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "shop_the_look_Cn8zRq": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look_qMQpTJ": {
+          "type": "look",
+          "settings": {
+            "product": "pistola-de-impacto-clavo-tipo-hilti-calibre-27-pt-950-silenciador",
+            "products": [],
+            "heading": "",
+            "text": "",
+            "content_alignment": "center",
+            "color_hotspot": "#ffffff",
+            "hotspot_desktop_horizontal": 45,
+            "hotspot_desktop_vertical": 50,
+            "hotspot_mobile_horizontal": 44,
+            "hotspot_mobile_vertical": 47
+          }
+        },
+        "look_UPPBe6": {
+          "type": "look",
+          "settings": {
+            "product": "set-de-llaves-allen-12pcs-pulgada-yato-yt-5837",
+            "products": [],
+            "heading": "",
+            "text": "",
+            "content_alignment": "center",
+            "color_hotspot": "#ffffff",
+            "hotspot_desktop_horizontal": 85,
+            "hotspot_desktop_vertical": 37,
+            "hotspot_mobile_horizontal": 90,
+            "hotspot_mobile_vertical": 44
+          }
+        }
+      },
+      "block_order": [
+        "look_qMQpTJ",
+        "look_UPPBe6"
+      ],
+      "disabled": true,
+      "name": "t:sections.shop_the_look.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "image_desktop": "shopify://shop_images/mainmhead-20220719152527_2x_deadd3c4-196c-4632-a778-31b9a74a5c29.jpg",
+        "image_ratio": "square",
+        "info_alignment": "left",
+        "show_quickview": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "image_alignment": "left",
+        "product_card_edges": "adapt",
+        "desktop_size": "large",
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "desktop_height": "750px",
+        "padding_top": 28,
+        "padding_bottom": 100,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "video_looping_ijQzex": {
+      "type": "video-looping",
+      "blocks": {
+        "shoppable_video_RBjj77": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runi-iK9IInbZI_Happy_woman_working_on_his_6abf963d-5cb3-41fc-8e5b-a3770dda2b32_2.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "pistola-de-impacto-clavo-tipo-hilti-calibre-27-pt-950-silenciador",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 27,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        },
+        "shoppable_video_GiBgcj": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runGyOjWf76mLo_Hand_using_chemicals_to_cl_37af80bc-ade5-4e25-9879-1b32fec89462_0.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "sulfato-de-cobre-multiples-usos-1k",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "kit-piscina-cloro-en-tabletas-5-kg",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 91,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "tx-frague-impermeable",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        },
+        "shoppable_video_XxrzM7": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.rungf5vPSVcQFg_Happy_construction_worker__e80a958e-92ed-48f4-98ac-4a3d8b5d8b1e_2.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "juego-de-dados-216-piezas-yato",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 27,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        },
+        "shoppable_video_Cazcjd": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runlvuSPDnsbKU_happy_woman_reviewing_to_c_9e32700c-ccf7-463d-bbf2-c73d41fd284f_3.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "set-de-llaves-allen-12pcs-pulgada-yato-yt-5837",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 27,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        },
+        "shoppable_video_Armr8L": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runU5FsWnSrx2I_happy_woman_playing_with_h_53ec7ec8-6c2d-4fe4-a3d0-68dab272f5f4_1.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "juego-de-puntas-toma-hex-10mm-40pcs-yato",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 27,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        },
+        "shoppable_video_MUHYGY": {
+          "type": "shoppable_video",
+          "settings": {
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runxZoIiwlbWrU_Happy_couple_planning_in_t_d639d526-dc4f-4263-9ab2-7dc382fe96f0_2.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "video_alt_text": "",
+            "integrated_social_media": "icon-instagram",
+            "account_username": "",
+            "social_account_url": "",
+            "social_post": "",
+            "product_1": "",
+            "hotspot_desktop_horizontal_1": 30,
+            "hotspot_desktop_vertical_1": 50,
+            "hotspot_mobile_horizontal_1": 27,
+            "hotspot_mobile_vertical_1": 47,
+            "product_2": "juego-de-dados-216-piezas-yato",
+            "hotspot_desktop_horizontal_2": 53,
+            "hotspot_desktop_vertical_2": 27,
+            "hotspot_mobile_horizontal_2": 54,
+            "hotspot_mobile_vertical_2": 25,
+            "product_3": "",
+            "hotspot_desktop_horizontal_3": 64,
+            "hotspot_desktop_vertical_3": 50,
+            "hotspot_mobile_horizontal_3": 65,
+            "hotspot_mobile_vertical_3": 50,
+            "product_4": "",
+            "hotspot_desktop_horizontal_4": 20,
+            "hotspot_desktop_vertical_4": 20,
+            "hotspot_mobile_horizontal_4": 20,
+            "hotspot_mobile_vertical_4": 20,
+            "product_5": "",
+            "hotspot_desktop_horizontal_5": 20,
+            "hotspot_desktop_vertical_5": 20,
+            "hotspot_mobile_horizontal_5": 20,
+            "hotspot_mobile_vertical_5": 20
+          }
+        }
+      },
+      "block_order": [
+        "shoppable_video_RBjj77",
+        "shoppable_video_GiBgcj",
+        "shoppable_video_XxrzM7",
+        "shoppable_video_Cazcjd",
+        "shoppable_video_Armr8L",
+        "shoppable_video_MUHYGY"
+      ],
+      "disabled": true,
+      "name": "Video looping",
+      "settings": {
+        "heading": "Lo que opinan [nuestros clientes]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "overlay_opacity": 70,
+        "product_card_position": "bottom",
+        "enable_hotspots": false,
+        "swiper_on_mobile": true,
+        "auto_play": true,
+        "show_arrow": false,
+        "show_pagination": true,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "hotspot_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "hotspot_color_dark": "rgba(0,0,0,0)",
+        "spacing": 28,
+        "full_width": true,
+        "show_section_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 40,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "featured_collection_qByd6L": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_PLXrb7": {
+          "type": "collection",
+          "settings": {
+            "collection": "piscinas",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": true,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_PLXrb7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Ofertas para [tu piscina] ☀️",
+        "highlight_type": "font_highlight",
+        "heading_size": 80,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "subheading": "",
+        "text": "",
+        "show_view_all": true,
+        "view_all_position": "bottom",
+        "view_all_button_style": "secondary",
+        "title_size": 90,
+        "title_style": "capitalize",
+        "title_position": "inline",
+        "tab_button_style": "button",
+        "color_background": "#e23a3a",
+        "color_text": "#282928",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": true,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": true,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 5,
+        "rows_desktop": 4,
+        "spacing": 20,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "columns_mobile": "2",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    },
+    "product_highlight_q7xEzW": {
+      "type": "product-highlight",
+      "blocks": {
+        "columns_HdHmMB": {
+          "type": "columns",
+          "settings": {
+            "icon": "water",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "Impermeabilidad Total",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Evita filtraciones y protege contra la humedad en baños, cocinas y exteriores.</p>"
+          }
+        },
+        "columns_aVEHE6": {
+          "type": "columns",
+          "settings": {
+            "icon": "check-mark",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "Antihongos & Antibacterias",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Previene la formación de moho y manchas, manteniendo las juntas limpias por más tiempo.</p>"
+          }
+        },
+        "columns_byngpA": {
+          "type": "columns",
+          "settings": {
+            "icon": "fire",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "Alta Adhesión & Durabilidad",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Excelente fijación y resistencia al tránsito y cambios de temperatura.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "columns_HdHmMB",
+        "columns_aVEHE6",
+        "columns_byngpA"
+      ],
+      "name": "t:sections.product-highlight.name",
+      "settings": {
+        "heading": "Producto [Destacado]",
+        "highlight_type": "font_highlight",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "#f2f2f2",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "image": "shopify://shop_images/ChatGPT_Image_30_oct_2025_04_59_44_p.m..png",
+        "show_sound_control": false,
+        "block_layout": "aspect-[2/3]",
+        "video_url": "",
+        "enable_video_autoplay": true,
+        "video_alt_text": "",
+        "product": "tx-frague-impermeable",
+        "show_rating": false,
+        "show_quickview": true,
+        "show_vendor": false,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "product_background": "#e8e8e8",
+        "product_background_dark": "rgba(0,0,0,0)",
+        "line_border": "line",
+        "icon_position": "col",
+        "icon_size": 45,
+        "content_alignment": "left",
+        "content_position": "center",
+        "spacing": 28,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "icon_highlight_background": "#2a2a2a",
+        "block_heading_color_light": "#ffffff",
+        "block_text_color_light": "#ffffff",
+        "line_border_light": "#ffffff",
+        "icon_color_light": "#e23a3a",
+        "icon_highlight_background_dark": "#ffffff",
+        "block_heading_color_dark": "#ffffff",
+        "block_text_color_dark": "#ffffff",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_section": false,
+        "desktop_height": "natural",
+        "padding_top": 68,
+        "padding_bottom": 84,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "adapt_corners_mobile": true,
+        "rounded_corner_section_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "media_gallery_Cng9cF": {
+      "type": "media-gallery",
+      "blocks": {
+        "media_TfVTkN": {
+          "type": "media",
+          "settings": {
+            "image_link": "shopify://collections/piscinas",
+            "open_new_window": false,
+            "video": "shopify://files/videos/slipkayne_httpss.mj.runWXlDqdHX2eg_A_360_slow_elegant_view_of_876835c2-9c92-44c1-8f83-3a4f71963bcb_1.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 40,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "Cuida tu piscina",
+            "highlight_type": "underline",
+            "title_size": 100,
+            "text": "<p>Todo en químicos, filtros y accesorios para mantener el agua<br/>limpia y cristalina durante el verano.</p>",
+            "text_size": 100,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Ver productos de piscina",
+            "button_link": "shopify://collections/piscinas",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "media_Qf9EKm": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/slipkayne_httpss.mj.runhxSCLG5fb6I_httpss.mj.runNoQy0r-RzuY_A_0d6204d0-4bc9-4976-ba5f-39b4a12ee1a8_0.png",
+            "image_link": "shopify://collections/control-de-plagas",
+            "open_new_window": false,
+            "video": "shopify://files/videos/slipkayne_A_guy_from_the_pest_control_service_in_a_mask_and_a_04479204-5f71-45cc-87e1-371629517447_2.mp4",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": true,
+            "video_alt_text": "",
+            "enable_content_overlay": true,
+            "content_position": "bottom",
+            "overlay_opacity": 30,
+            "number_of_columns": 1,
+            "number_of_row": 1,
+            "icon": "none",
+            "another_icon": "",
+            "custom_icon": "",
+            "icon_size": 45,
+            "sub_title": "",
+            "title": "Protege tu hogar",
+            "highlight_type": "underline",
+            "title_size": 100,
+            "text": "<p>Soluciones efectivas para eliminar insectos y mantener<br/>tus espacios libres de plagas todo el año.</p>",
+            "text_size": 100,
+            "text_align": "center",
+            "media_position": "top",
+            "button_label": "Explorar control de plagas",
+            "button_link": "shopify://collections/control-de-plagas",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "color_overlay": "rgba(0,0,0,0)",
+            "title_color": "#ffffff",
+            "text_color": "#ffffff",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "background_button": "#e23a3a",
+            "color_button": "rgba(0,0,0,0)",
+            "background_button_hover": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "media_TfVTkN",
+        "media_Qf9EKm"
+      ],
+      "name": "t:sections.media-gallery.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "heading_highlight_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "heading_highlight_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "max_columns": 2,
+        "spacing": 28,
+        "height_desktop": 300,
+        "keep_ratio_on_different_width": false,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "edge_style": "adapt",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "min_columns_mobile": "1",
+        "spacing_mobile": 16,
+        "height_mobile": 250,
+        "show_section_divider_mobile": false,
+        "full_width_mobile": false,
+        "edge_style_mobile": "adapt",
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "newsletter_Rwk93n": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_mdT9U7": {
+          "type": "heading",
+          "settings": {
+            "heading": "¡No te pierdas nuestras ofertas!",
+            "highlight_type": "font_highlight",
+            "heading_size": 110,
+            "heading_tag": "h2",
+            "text": "<p>Sé el primero en conocer descuentos, novedades y productos destacados cada semana.</p>",
+            "text_size": 100
+          }
+        },
+        "email_form_4BJWqq": {
+          "type": "email_form",
+          "settings": {
+            "button_label": "Suscribirse"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mdT9U7",
+        "email_form_4BJWqq"
+      ],
+      "custom_css": [
+        "[id*=\"Newsletter-success\"] {background-color: rgba(0, 0, 0, 0.45) !important; border-radius: 8px;}"
+      ],
+      "settings": {
+        "overlay_opacity": 0,
+        "form_width": "large",
+        "content_layout": "horizontal",
+        "background_color_light": "#e42c2c",
+        "heading_light": "#ffffff",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "#ffffff",
+        "button_light": "#000000",
+        "button_text_light": "rgba(0,0,0,0)",
+        "button_hover_light": "rgba(0,0,0,0)",
+        "button_text_hover_light": "rgba(0,0,0,0)",
+        "line_border": "#ffffff",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "button_dark": "rgba(0,0,0,0)",
+        "button_text_dark": "rgba(0,0,0,0)",
+        "button_hover_dark": "rgba(0,0,0,0)",
+        "button_text_hover_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "#ffffff",
+        "desktop_height": "450px",
+        "show_section_divider": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "mobile_height": "300px",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    }
+  },
+  "order": [
+    "4c9e1af5-c4c0-48cf-b771-49029eedd24f",
+    "multicolumn_rxMYDJ",
+    "collection_list_kQpQDe",
+    "collection_list_kAFYK7",
+    "featured_collection_6r8bKg",
+    "media_gallery_B3NkJH",
+    "featured_collection_79FUmp",
+    "collage_mizmpV",
+    "featured_collection_EVwEXd",
+    "products_bundle_fNh8G3",
+    "logo_list_frUX68",
+    "logo_list_8DXqDa",
+    "media_gallery_mTh84Y",
+    "e32885d8-0a8f-4c4f-8801-377d01cb7656",
+    "shop_the_look_caVzU7",
+    "shop_the_look_Cn8zRq",
+    "video_looping_ijQzex",
+    "featured_collection_qByd6L",
+    "product_highlight_q7xEzW",
+    "media_gallery_Cng9cF",
+    "newsletter_Rwk93n"
+  ]
+}

@@ -1,0 +1,323 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumbs": {
+          "type": "breadcrumbs",
+          "settings": {
+            "show_breadcrumbs_border": false,
+            "full_width_breadcrumb": true,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-center",
+            "background_color_light": "#404040",
+            "text_color_light": "#ffffff",
+            "textlink_color_light": "#b6b6b6",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "textlink_color_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "description_CbYmnn": {
+          "type": "description",
+          "settings": {
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "full_width": false,
+            "desktop_content_alignment": "text-left",
+            "mobile_content_alignment": "text-left",
+            "background_color_light": "rgba(0,0,0,0)",
+            "text_color_light": "rgba(0,0,0,0)",
+            "background_color_dark": "rgba(0,0,0,0)",
+            "text_color_dark": "rgba(0,0,0,0)",
+            "padding_top": 28,
+            "padding_bottom": 28
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumbs",
+        "description_CbYmnn"
+      ],
+      "settings": {
+        "show_collection_image": false,
+        "image_overlay_opacity": 20,
+        "show_collection_name": false,
+        "title_position": "text-center",
+        "size_title": 120,
+        "heading_tag": "h1",
+        "full_width_title": true,
+        "desktop_height": "450px",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_height": "250px",
+        "full_width_mobile": true,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "promotion_banner_KtyWnX": {
+      "type": "promotion-banner",
+      "blocks": {
+        "image_banner_399Wkj": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "highlight_type": "underline",
+            "heading_size": 150,
+            "heading_tag": "h1",
+            "subheading": "",
+            "subheading_size": 100,
+            "text": "",
+            "text_size": 130,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_399Wkj"
+      ],
+      "name": "t:sections.promotion-banner.name",
+      "settings": {
+        "heading": "{{ collection.title }}",
+        "image": "shopify://shop_images/Frame_6.png",
+        "image_mobile": "shopify://shop_images/Frame_7.png",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 30,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": false,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": false,
+        "desktop_height": "natural",
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "full_width_mobile": false,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "250px",
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "enable_filtering": true,
+        "filter_type": "above",
+        "default_hide_filtering": false,
+        "expand_filter": true,
+        "sticky_filtering": true,
+        "filter_edge_style": "adapt",
+        "enable_collection_count": true,
+        "enable_sorting": true,
+        "products_per_page": "15;30;45;60;75;90",
+        "products_per_row_on_desktop": 5,
+        "products_per_row_on_mobile": "2",
+        "pagination": "pagination",
+        "paginate_type": "underline",
+        "show_vendor": false,
+        "show_rating": true,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "show_description": false,
+        "enable_advanced_filter": true,
+        "key_value": "",
+        "hide_unavaiable_filter": true,
+        "columns_desktop_1": 4,
+        "desktop_image_width_1": 150,
+        "columns_desktop_2": 4,
+        "desktop_image_width_2": 150,
+        "enable_desktop_slider": true,
+        "image_ratio_filter": "round",
+        "advanced_filter_image_ratio": "square",
+        "enable_micro_schema": false,
+        "full_width": false,
+        "spacing_col": 28,
+        "spacing_row": 28,
+        "padding_top": 52,
+        "padding_bottom": 100,
+        "spacing_col_mobile": 16,
+        "spacing_row_mobile": 12,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "collection_list_RhLj7a": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Rgtkem": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hogar"
+          }
+        },
+        "featured_collection_9mLeQV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "herramientas"
+          }
+        },
+        "featured_collection_qxAgGm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automotores"
+          }
+        },
+        "featured_collection_HBhtij": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jardineria"
+          }
+        },
+        "featured_collection_XAM9tc": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "impermeabilizantes"
+          }
+        },
+        "featured_collection_X6bCVp": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "cola-fria"
+          }
+        },
+        "featured_collection_wNKfdg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "destapadores"
+          }
+        },
+        "featured_collection_Q7nkVe": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "gasfiteria"
+          }
+        },
+        "featured_collection_NVXJcN": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "griferia-de-bano"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Rgtkem",
+        "featured_collection_9mLeQV",
+        "featured_collection_qxAgGm",
+        "featured_collection_HBhtij",
+        "featured_collection_XAM9tc",
+        "featured_collection_X6bCVp",
+        "featured_collection_wNKfdg",
+        "featured_collection_Q7nkVe",
+        "featured_collection_NVXJcN"
+      ],
+      "name": "t:sections.collection-list.name",
+      "settings": {
+        "heading": "Nuestras Categorías",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "show_view_all": false,
+        "background_color_light": "#f5f5f5",
+        "background_color_dark": "",
+        "collection_metafield": "",
+        "image_ratio": "square",
+        "title_size": 100,
+        "show_text_overlay": false,
+        "content_alignment": "center",
+        "content_position": "bottom",
+        "image_overlay_opacity": 5,
+        "title_color": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "title_color_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "show_item_count": false,
+        "columns_desktop": 5,
+        "columns_mobile": "2",
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": true,
+        "enable_arrow_mobile": true,
+        "spacing": 4,
+        "show_section_divider": false,
+        "full_width": false,
+        "padding_top": 80,
+        "padding_bottom": 60,
+        "spacing_mobile": 4,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "recently_viewed_PYzrAW": {
+      "type": "recently-viewed",
+      "custom_css": [
+        ".button-link {display: none;}"
+      ],
+      "name": "t:sections.recently-viewed-products.name",
+      "settings": {
+        "heading": "Vistos recientemente",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "enable_clear_history": true,
+        "products_to_show": 4,
+        "background_color_light": "",
+        "background_color_dark": "",
+        "show_vendor": false,
+        "show_rating": false,
+        "show_highlighted_features": true,
+        "show_highlighted_attributes": true,
+        "show_quickview": true,
+        "enable_carousel_desktop": false,
+        "enable_swiper_mobile": false,
+        "enable_arrow_mobile": false,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 28,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "promotion_banner_KtyWnX",
+    "product-grid",
+    "collection_list_RhLj7a",
+    "recently_viewed_PYzrAW"
+  ]
+}

@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": true,
+        "heading_size": 170,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "rich_text_8jriLR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_grRBYp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Términos y condiciones",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "text_UENGX4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>TÉRMINOS Y CONDICIONES DE BAUMART</strong> </p><p><strong>1. Aceptación de los Términos y Condiciones</strong> </p><p>Al acceder y utilizar el sitio web <a href=\"https://www.baumart.cl/\" target=\"_blank\"><span style=\"text-decoration:underline\"><strong>www.baumart.cl</strong></span></a> (en adelante, el “Sitio”) y realizar compras en nuestro ecommerce <strong>Baumart</strong>, usted declara haber leído, comprendido y aceptado estos Términos y Condiciones. Si no está de acuerdo, debe abstenerse de utilizar el Sitio. </p><p><strong>2. Información de la Empresa</strong> </p><p>Baumart es operado por <strong>Baumart SpA</strong>, RUT <strong>77.557.394-5</strong>. Para consultas o asistencia, puede contactarnos en: <strong>contacto@baumart.cl</strong> </p><p><strong>3. Productos y Precios</strong> </p><ol><li>La información de productos, precios y disponibilidad puede ser modificada sin previo aviso. </li><li>Procuramos que las imágenes y descripciones sean precisas, pero no garantizamos exactitud absoluta. </li><li>En caso de <strong>errores evidentes de precio</strong>, Baumart se reserva el derecho de <strong>anular la compra y reembolsar íntegramente el monto pagado</strong>. </li></ol><p><strong>4. Disponibilidad de Stock</strong> </p><ol><li>Todas las compras están sujetas a disponibilidad real de inventario. </li><li>Si un producto comprado no tiene stock disponible, el cliente podrá elegir entre: </li></ol><ul><li><strong>Reembolso completo</strong>, o </li><li><strong>Esperar la reposición del producto</strong>. </li></ul><ol><li>El cliente será notificado oportunamente para elegir la opción que prefiera. </li></ol><p><strong>5. Proceso de Compra</strong> </p><ol><li>Para comprar en el Sitio, debe ser mayor de 18 años o contar con autorización de un adulto. </li><li>Usted garantiza que la información entregada es veraz, completa y actualizada. </li><li>Baumart puede rechazar o cancelar pedidos por razones legítimas, como errores de información, falta de stock o sospecha de fraude. </li></ol><p><strong>6. Pago y Facturación</strong> </p><ol><li>Aceptamos pagos mediante: </li></ol><ul><li>Transferencia bancaria </li><li>Tarjetas de crédito y débito a través de <strong>Mercado Pago</strong> </li></ul><ol><li>La facturación se realizará con los datos proporcionados por el cliente. Es su responsabilidad entregar información correcta. </li></ol><p><strong>7. Envíos y Entregas</strong> </p><ol><li>Los plazos de envío se informarán durante el proceso de compra. </li><li>No somos responsables por retrasos atribuibles a terceros o situaciones externas. </li><li>La entrega se realizará en la dirección indicada por el cliente. </li><li>No realizamos <strong>despachos internacionales</strong>. </li><li>Si la dirección se encuentra fuera de la cobertura logística, se realizará <strong>reembolso completo</strong>. </li><li>Baumart podrá cancelar pedidos cuyo volumen o dimensiones excedan los estándares logísticos. En ese caso, se ofrecerá una alternativa de envío con costo adicional o el reembolso total. </li></ol><p><strong>8. Cambios, Devoluciones y Reembolsos</strong> </p><p><strong>8.1 Políticas de Cambio (30 días)</strong> </p><p>El cliente podrá solicitar <strong>cambio de producto dentro de 30 días</strong> desde la recepción, siempre que: </p><ul><li>El producto esté <strong>nuevo</strong>, sin uso, sin daños y con todos sus accesorios. </li><li>El empaque original esté en buen estado. </li><li>No sea un producto <strong>consumible</strong>, perecible o con fecha de vencimiento próxima. </li></ul><p>Los costos de envío asociados al cambio serán asumidos por el cliente, salvo error atribuible a Baumart. </p><p><strong>8.2 Garantía Legal (6 meses)</strong> </p><p>Conforme a la Ley del Consumidor en Chile, todos los productos cuentan con <strong>6 meses de garantía legal</strong>, excepto: </p><ul><li>Productos consumibles </li><li>Productos cuyo desgaste sea propio del uso </li></ul><p>El cliente podrá elegir entre: </p><ul><li><strong>Reparación</strong>, </li><li><strong>Cambio</strong>, o </li><li><strong>Devolución del dinero</strong>. </li></ul><p>Si el producto debe ser evaluado por servicio técnico, se informará el plazo correspondiente. </p><p><strong>8.3 Programa Compra Protegida Baumart</strong> </p><p>Incluye: </p><ul><li><strong>21 días de protección</strong> si el producto no llega. </li><li><strong>30 días desde la recepción</strong> para arrepentimiento o problemas del producto. </li></ul><p>En caso de arrepentimiento, se descontará el costo del envío. Si el envío fue gratuito, se descontará el costo real incurrido por Baumart. </p><p><strong>Métodos de reembolso:</strong> </p><ul><li>Mercado Pago: acreditación inmediata (según políticas de la plataforma). </li><li>Tarjeta de crédito: reversa en el siguiente o subsiguiente estado de cuenta. </li><li>Tarjeta de débito: visible en Home Banking. </li><li>Transferencia bancaria: cuando corresponda. </li></ul><p><strong>9. Garantías, Servicio Técnico y Recambios</strong> </p><ol><li>Si el producto presenta falla de fábrica, Baumart gestionará reparación, cambio o devolución según corresponda. </li><li>Si el producto es apto para servicio técnico, se podrá entregar en nuestras instalaciones o enviar mediante etiqueta proporcionada por Baumart. </li><li>Si la falla es atribuible a mal uso, los costos de envío y reparación serán de cargo del cliente. </li><li>Si el cliente recibe un producto incorrecto o dañado, se realizará <strong>reembolso completo</strong> o <strong>recambio</strong>, según disponibilidad. </li></ol><p><strong>10. Propiedad Intelectual</strong> </p><p>Todo el contenido del Sitio (textos, imágenes, logos, diseños, etc.) es propiedad de Baumart o de sus respectivos titulares y está protegido por la legislación chilena e internacional. </p><p><strong>11. Protección de Datos Personales y Privacidad</strong> </p><p>Baumart cumple con la Ley 19.628 sobre Protección de Datos Personales. </p><p><strong>11.1 Datos que recopilamos</strong> </p><ul><li>Información ingresada por el cliente al comprar o registrarse </li><li>Datos necesarios para procesar pagos </li><li>Información de navegación mediante tecnologías de seguimiento </li><li>Datos proporcionados voluntariamente para comunicaciones comerciales </li></ul><p><strong>11.2 Uso de datos</strong> </p><p>Los datos personales se utilizan para: </p><ul><li>Procesar compras y gestionar pedidos </li><li>Emitir documentos tributarios </li><li>Gestionar envíos y devoluciones </li><li>Mejorar la experiencia del usuario en el Sitio </li><li><strong>Marketing y comunicaciones comerciales</strong>, incluyendo: </li><li>Envío de promociones, novedades y ofertas </li><li>Segmentación y personalización de campañas </li><li>Remarketing mediante Meta Pixel y Google Analytics </li><li>Automatización de correos y flujos de comunicación autorizados por el usuario </li></ul><p>El usuario puede solicitar dejar de recibir comunicaciones comerciales en cualquier momento. </p><p><strong>11.3 Tecnologías utilizadas</strong> </p><p>El Sitio utiliza: </p><ul><li><strong>Meta Pixel</strong> </li><li><strong>Google Analytics</strong> </li><li>Cookies y herramientas de medición y remarketing </li></ul><p><strong>11.4 Derechos del usuario</strong> </p><p>El cliente puede solicitar: </p><ul><li>Acceso a sus datos </li><li>Rectificación </li><li>Eliminación cuando proceda </li><li>Suspensión del envío de comunicaciones comerciales </li></ul><p>Las solicitudes deben enviarse a <strong>contacto@baumart.cl</strong> </p><p><strong>12. Uso del Sitio y Responsabilidad</strong> </p><ol><li>El usuario se compromete a utilizar el Sitio de forma lícita. </li><li>Baumart no garantiza disponibilidad continua del Sitio. </li><li>No somos responsables por daños derivados de fallas técnicas, interrupciones o uso indebido del Sitio. </li></ol><p><strong>13. Ley Aplicable y Jurisdicción</strong> </p><p>Estos Términos y Condiciones se rigen por las leyes de la República de Chile. Cualquier disputa será resuelta por los tribunales competentes del país. </p><p><strong>14. Modificaciones a los Términos y Condiciones</strong> </p><p>Baumart podrá actualizar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas desde su publicación en el Sitio </p><p> </p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less"
+          }
+        }
+      },
+      "block_order": [
+        "heading_grRBYp",
+        "text_UENGX4"
+      ],
+      "name": "t:sections.rich-text.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "left",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_8jriLR"
+  ]
+}

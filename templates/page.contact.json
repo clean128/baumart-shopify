@@ -1,0 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "promotion-banner": {
+      "type": "promotion-banner",
+      "blocks": {
+        "text": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "Contacto",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "subheading": "",
+            "subheading_size": 100,
+            "text": "¿Tienes dudas sobre un producto, tu pedido o necesitas ayuda? Escríbenos y nuestro equipo te responderá a la brevedad.",
+            "text_size": 130,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "heading": "Promotion Banner",
+        "image": "shopify://shop_images/a-background-of-different-common-construction-tools-on-a-black-table-looked-from-a-top-view-perfect-for-a-backgrund-banner.png",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 60,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": false,
+        "desktop_height": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "250px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": false,
+        "heading_size": 100,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "blocks": {
+        "name": {
+          "type": "name",
+          "settings": {
+            "heading": "Nombre",
+            "mark_as_required": true
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "heading": "Email"
+          }
+        },
+        "phone": {
+          "type": "phone",
+          "settings": {
+            "heading": "Número de teléfono",
+            "mark_as_required": false
+          }
+        },
+        "message": {
+          "type": "message",
+          "settings": {
+            "heading": "Mensaje",
+            "mark_as_required": true
+          }
+        }
+      },
+      "block_order": [
+        "name",
+        "email",
+        "phone",
+        "message"
+      ],
+      "settings": {
+        "heading": "Envíanos un mensaje",
+        "highlight_type": "underline",
+        "heading_size": 70,
+        "heading_tag": "h2",
+        "heading_alignment": "left",
+        "text": "<p>Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "button_label": "Enviar",
+        "button_alignment": "right",
+        "success_message": "Gracias por contactarnos. Nos pondremos en contacto contigo a la brevedad.",
+        "show_content": "info",
+        "form_alignment": "left",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "contact_heading": "Información de contacto",
+        "highlight_type_1": "underline",
+        "heading_tag_2": "h2",
+        "infomation": "",
+        "address": "",
+        "phone_nummber": "",
+        "email_address": "",
+        "contact_text": "<p><strong>Chile</strong>, Santiago de Chile<strong><br/><br/>Ayuda al cliente:</strong><br/>Correo: <a href=\"mailto:soporte@baumart.cl\" target=\"_blank\" title=\"mailto:soporte@baumart.cl\">soporte@baumart.cl</a><br/>Llamadas: <a href=\"tel:+56 2 3375 1127\" title=\"tel:+56 2 3375 1127\">+56 2 3375 1127</a><br/>WhatsApp <a href=\"tel:+56 9 6668 8953\" title=\"tel:+56 9 6668 8953\">+56 9 6668 8953</a></p><p><strong>Ventas:</strong><br/><a href=\"mailto:ventas@baumart.cl\" title=\"mailto:ventas@baumart.cl\">ventas@baumart.cl</a></p>",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 76,
+        "padding_bottom": 100,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 60
+      }
+    }
+  },
+  "order": [
+    "promotion-banner",
+    "main",
+    "form"
+  ]
+}

@@ -1,0 +1,608 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": true,
+        "heading_size": 170,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "max_container_page_width": 100,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "promotion_banner_MWinqJ": {
+      "type": "promotion-banner",
+      "blocks": {
+        "image_banner_X7xjmh": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "Nosotros",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "subheading": "",
+            "subheading_size": 100,
+            "text": "¿Tienes dudas sobre un producto, tu pedido o necesitas ayuda? Escríbenos y nuestro equipo te responderá a la brevedad.",
+            "text_size": 130,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_X7xjmh"
+      ],
+      "settings": {
+        "heading": "Promotion Banner",
+        "image": "shopify://shop_images/a-background-of-different-common-construction-tools-on-a-black-table-looked-from-a-top-view-perfect-for-a-backgrund-banner.png",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 60,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "adapt_corners_desktop": true,
+        "rounded_corner_image": false,
+        "desktop_height": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width_mobile": true,
+        "adapt_corners_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "250px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_with_text_h8C6Lb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tttzTK": {
+          "type": "heading",
+          "settings": {
+            "subheading": "Nosotros",
+            "heading": "Somos Baumart",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>En <a href=\"https://Baumart.cl \" title=\"https://Baumart.cl \">Baumart.cl</a> entendemos que cuando necesitas herramientas, materiales o soluciones para tu proyecto, <strong>no puedes darte el lujo de perder tiempo.</strong> Por eso somos el <strong>eCommerce de la construcción en Chile</strong>, donde encuentras todo para hogar, ferretería, construcción, jardín, mecánica y más, con entrega rápida en todo el país. <br/><br/>Como líderes en comercio electrónico ferretero, operamos desde nuestro centro de distribución ubicado estratégicamente en <strong>San Bernardo, Región Metropolitana</strong>, lo que nos permite despachar de forma ágil, segura y confiable a cualquier región de Chile. <br/><br/>En Baumart te ayudamos a avanzar sin interrupciones: <strong>compra fácil, recibe rápido y sigue construyendo.   </strong> </p><p><strong>Pagos seguros:</strong> contamos con sistemas avanzados de ciberseguridad y Compra Protegida para garantizar la integridad de tus transacciones y la confidencialidad de tus datos. </p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        },
+        "button_feR7NH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explora nuestros productos",
+            "button_link": "shopify://collections/all",
+            "open_new_window": false,
+            "show_button_style": "primary",
+            "button_light": "#e23a3a",
+            "button_text_light": "rgba(0,0,0,0)",
+            "button_hover_light": "rgba(0,0,0,0)",
+            "button_text_hover_light": "rgba(0,0,0,0)",
+            "secondary_button_light": "rgba(0,0,0,0)",
+            "secondary_button_text_light": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "button_dark": "rgba(0,0,0,0)",
+            "button_text_dark": "rgba(0,0,0,0)",
+            "button_hover_dark": "rgba(0,0,0,0)",
+            "button_text_hover_dark": "rgba(0,0,0,0)",
+            "secondary_button_dark": "rgba(0,0,0,0)",
+            "secondary_button_text_dark": "rgba(0,0,0,0)",
+            "colors_text_link_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tttzTK",
+        "button_feR7NH"
+      ],
+      "name": "t:sections.image-with-text.name",
+      "settings": {
+        "show_hero": false,
+        "image": "shopify://shop_images/a-construction-worker-verifying-stock-with-a-tablet-in-a-warehouse.png",
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "large",
+        "image_layout": "normal",
+        "adapt_radius": true,
+        "image_corner_radius": 0,
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "content_layout": "overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "#000000",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "dashed",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 96,
+        "bottom_padding": 100,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0
+      }
+    },
+    "multicolumn_39ijhg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_3BBWRp": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "ENVÍO A TODO CHILE",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>En conjunto a nuestra flota y patner logísticos hacemos envíos a todos los rincones del país en tiempos record.</p>"
+          }
+        },
+        "column_t4NUfd": {
+          "type": "column",
+          "settings": {
+            "icon": "award",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "LA MEJOR CALIDAD",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Productos de alta calidad, respaldados por garantías que van desde un mínimo de 6 meses hasta garantías de por vida, para tu tranquilidad y satisfacción.</p>"
+          }
+        },
+        "column_ffnQ9V": {
+          "type": "column",
+          "settings": {
+            "icon": "tag",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "LOS MEJORES PRECIOS",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>En Baumart, nos destacamos como líderes en el mercado, ofreciendo los precios más competitivos y convenientes en nuestra tienda</p>"
+          }
+        },
+        "column_MbQpdT": {
+          "type": "column",
+          "settings": {
+            "icon": "credit-card",
+            "another_icon": "",
+            "custom_icon": "",
+            "title": "PAGOS SEGUROS",
+            "highlight_type": "underline",
+            "title_link": "",
+            "open_new_window": false,
+            "heading_size": 100,
+            "text": "<p>Seguridad máxima en nuestra plataforma: ciberseguridad certificada por Norton y Compra Protegida para garantizar la integridad de tus transacciones y la confidencialidad de tus datos.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_3BBWRp",
+        "column_t4NUfd",
+        "column_ffnQ9V",
+        "column_MbQpdT"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "none",
+        "border_column": "none",
+        "column_content_alignment": "center",
+        "icon_position": "above",
+        "icon_size": 45,
+        "enable_desktop_slider": true,
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": true,
+        "change_bar_every": 5,
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_light": "#000000",
+        "text_light": "#000000",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "color_icon_light": "#e23a3a",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "color_icon_dark": "rgba(0,0,0,0)",
+        "column_layout_desktop": "lg:w-1/4",
+        "section_height_desktop": "md:py-7",
+        "spacing_desktop": 28,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "column_layout_mobile": "w-full",
+        "section_height_mobile": "py-5",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "logo_list_CmDnzJ": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_yk6hLC": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marca-gasfix-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_xey7n3": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/MARCA-INOXCROM.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_yKfEDK": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-anasac.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_hLbPCX": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-DragPharma-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_Fz4Fym": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-fit-formula.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_xXrteY": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-momo.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_cCHgz6": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-oxyfresh.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_NgpY9e": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-patel.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_xGQe9C": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-proden-plaque-off.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_nU4QaU": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcas-providus-1.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_fghHYP": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/marcassercogas.webp",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_Wb644W": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-1-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_RME7GJ": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_briRVh": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-2-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_AL73ar": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-3-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_9dBGWz": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_e4cigz": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-2-copia-4-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "logo_PHFUnb": {
+          "type": "logo",
+          "settings": {
+            "image_logo": "shopify://shop_images/Mesa-de-trabajo-3-100.jpg",
+            "image_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_yk6hLC",
+        "logo_xey7n3",
+        "logo_yKfEDK",
+        "logo_hLbPCX",
+        "logo_Fz4Fym",
+        "logo_xXrteY",
+        "logo_cCHgz6",
+        "logo_NgpY9e",
+        "logo_xGQe9C",
+        "logo_nU4QaU",
+        "logo_fghHYP",
+        "logo_Wb644W",
+        "logo_RME7GJ",
+        "logo_briRVh",
+        "logo_AL73ar",
+        "logo_9dBGWz",
+        "logo_e4cigz",
+        "logo_PHFUnb"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "heading": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "corner_image": 0,
+        "show_border": false,
+        "image_ratio": "auto",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_carousel_on_desktop": true,
+        "enable_arrow_mobile": false,
+        "auto_switch_bar": true,
+        "change_bar_every": 4,
+        "show_navigation": true,
+        "columns_desktop": 6,
+        "full_width": true,
+        "show_section_divider": false,
+        "spacing": 16,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "layout_mobile": "carousel",
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "featured_collection_Nq3ybj": {
+      "type": "featured-collection",
+      "blocks": {
+        "collection_nDjHLQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "mas-vendidos",
+            "show_description": true,
+            "description": "",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "show_vendor": false,
+            "show_rating": false,
+            "show_highlighted_features": true,
+            "show_highlighted_attributes": true,
+            "show_quickview": true,
+            "show_promotion": false,
+            "promotion_position": "left",
+            "card_link": "",
+            "open_new_window": false,
+            "heading": "Featured collection",
+            "highlight_type": "underline",
+            "heading_size": 70,
+            "content": "<p>10% OFF</p>",
+            "text_size": 100,
+            "content_alignment": "center",
+            "content_position": "bottom",
+            "button_label": "See more",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style": "primary",
+            "enable_text_overlay": false,
+            "overlay_opacity": 0,
+            "image_ratio": "100",
+            "background_color": "rgba(0,0,0,0)",
+            "color_text": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "color_button": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)",
+            "show_sound_control": false,
+            "video_url": "",
+            "enable_video_autoplay": false,
+            "video_alt_text": "",
+            "product_card": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_nDjHLQ"
+      ],
+      "name": "t:sections.featured-collection.name",
+      "settings": {
+        "title": "Explora nuestros más vendidos",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "subheading": "",
+        "text": "",
+        "show_view_all": false,
+        "view_all_position": "top",
+        "view_all_button_style": "text-link",
+        "title_size": 120,
+        "title_style": "none",
+        "title_position": "under",
+        "tab_button_style": "label",
+        "color_background": "rgba(0,0,0,0)",
+        "color_text": "rgba(0,0,0,0)",
+        "color_background_secondary": "rgba(0,0,0,0)",
+        "color_text_secondary": "rgba(0,0,0,0)",
+        "color_background_hover": "rgba(0,0,0,0)",
+        "color_text_hover": "rgba(0,0,0,0)",
+        "color_background_dark": "rgba(0,0,0,0)",
+        "color_text_dark": "rgba(0,0,0,0)",
+        "color_background_secondary_dark": "rgba(0,0,0,0)",
+        "color_text_secondary_dark": "rgba(0,0,0,0)",
+        "color_background_hover_dark": "rgba(0,0,0,0)",
+        "color_text_hover_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "slider_style": "horizontal",
+        "swiper_on_mobile": false,
+        "enable_arrow_mobile": false,
+        "auto_play": false,
+        "change_slides_speed": 5,
+        "columns_desktop": 4,
+        "rows_desktop": 1,
+        "spacing": 28,
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "columns_mobile": "1",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "promotion_banner_MWinqJ",
+    "image_with_text_h8C6Lb",
+    "multicolumn_39ijhg",
+    "logo_list_CmDnzJ",
+    "featured_collection_Nq3ybj"
+  ]
+}
