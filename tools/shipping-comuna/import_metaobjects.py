@@ -61,7 +61,7 @@ DEFINITION_SPECS = [
                 "name": "Region",
                 "type": "metaobject_reference",
                 "required": True,
-                "validations": [{"name": "metaobject_definition_id", "value": "shipping_region"}],
+                "validations": [{"name": "metaobject_definition_id", "definition_type": "shipping_region"}],
             },
             {
                 "key": "free_shipping_threshold_override",
@@ -96,14 +96,14 @@ DEFINITION_SPECS = [
                 "name": "Default Region",
                 "type": "metaobject_reference",
                 "required": True,
-                "validations": [{"name": "metaobject_definition_id", "value": "shipping_region"}],
+                "validations": [{"name": "metaobject_definition_id", "definition_type": "shipping_region"}],
             },
             {
                 "key": "default_comuna",
                 "name": "Default Comuna",
                 "type": "metaobject_reference",
                 "required": True,
-                "validations": [{"name": "metaobject_definition_id", "value": "shipping_comuna"}],
+                "validations": [{"name": "metaobject_definition_id", "definition_type": "shipping_comuna"}],
             },
             {
                 "key": "global_free_shipping_threshold",
@@ -429,7 +429,50 @@ def normalize_definition_fields(fields: list[dict[str, Any]]) -> list[dict[str, 
     return normalized
 
 
-def definition_requires_update(existing: dict[str, Any], spec: dict[str, Any]) -> bool:
+def resolve_validations(
+    validations: list[dict[str, Any]],
+    definition_ids: dict[str, str],
+) -> list[dict[str, str]]:
+    resolved = []
+    for validation in validations:
+        item = {"name": validation["name"]}
+        if "definition_type" in validation:
+            definition_type = validation["definition_type"]
+            definition_id = definition_ids.get(definition_type)
+            if not definition_id:
+                raise ShopifyGraphQLError(
+                    f"Definition ID for {definition_type!r} is required before reference validations can be created."
+                )
+            item["value"] = definition_id
+        else:
+            item["value"] = validation["value"]
+        resolved.append(item)
+    return resolved
+
+
+def resolve_definition_fields(
+    fields: list[dict[str, Any]],
+    definition_ids: dict[str, str],
+) -> list[dict[str, Any]]:
+    normalized = []
+    for field in fields:
+        item = {
+            "key": field["key"],
+            "name": field["name"],
+            "type": field["type"],
+            "required": field.get("required", False),
+        }
+        if field.get("validations"):
+            item["validations"] = resolve_validations(field["validations"], definition_ids)
+        normalized.append(item)
+    return normalized
+
+
+def definition_requires_update(
+    existing: dict[str, Any],
+    spec: dict[str, Any],
+    definition_ids: dict[str, str],
+) -> bool:
     existing_fields = {field["key"]: field for field in existing.get("fieldDefinitions", [])}
     for expected in spec["fields"]:
         current = existing_fields.get(expected["key"])
@@ -440,7 +483,7 @@ def definition_requires_update(existing: dict[str, Any], spec: dict[str, Any]) -
             return True
         if bool(current.get("required")) != bool(expected.get("required", False)):
             return True
-        expected_validations = expected.get("validations", [])
+        expected_validations = resolve_validations(expected.get("validations", []), definition_ids)
         current_validations = current.get("validations") or []
         if sorted(expected_validations, key=lambda item: (item["name"], item["value"])) != sorted(
             current_validations, key=lambda item: (item["name"], item["value"])
@@ -450,23 +493,33 @@ def definition_requires_update(existing: dict[str, Any], spec: dict[str, Any]) -
 
 
 def ensure_definitions(client: ShopifyAdminClient) -> None:
+    definition_ids: dict[str, str] = {}
+
+    for spec in DEFINITION_SPECS:
+        existing = client.execute(DEFINITION_BY_TYPE_QUERY, {"type": spec["type"]})["metaobjectDefinitionByType"]
+        if existing is not None:
+            definition_ids[spec["type"]] = existing["id"]
+
     for spec in DEFINITION_SPECS:
         existing = client.execute(DEFINITION_BY_TYPE_QUERY, {"type": spec["type"]})["metaobjectDefinitionByType"]
         payload = {
             "name": spec["name"],
             "type": spec["type"],
-            "fieldDefinitions": normalize_definition_fields(spec["fields"]),
+            "fieldDefinitions": resolve_definition_fields(spec["fields"], definition_ids),
         }
         if existing is None:
             result = client.execute(DEFINITION_CREATE_MUTATION, {"definition": payload})
-            ensure_no_user_errors(result, "metaobjectDefinitionCreate")
+            created = ensure_no_user_errors(result, "metaobjectDefinitionCreate")["metaobjectDefinition"]
+            definition_ids[spec["type"]] = created["id"]
             print(f"[apply] created definition: {spec['type']}")
             continue
-        if definition_requires_update(existing, spec):
+        if definition_requires_update(existing, spec, definition_ids):
             result = client.execute(DEFINITION_UPDATE_MUTATION, {"id": existing["id"], "definition": payload})
-            ensure_no_user_errors(result, "metaobjectDefinitionUpdate")
+            updated = ensure_no_user_errors(result, "metaobjectDefinitionUpdate")["metaobjectDefinition"]
+            definition_ids[spec["type"]] = updated["id"]
             print(f"[apply] updated definition: {spec['type']}")
         else:
+            definition_ids[spec["type"]] = existing["id"]
             print(f"[apply] definition unchanged: {spec['type']}")
 
 
