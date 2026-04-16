@@ -681,6 +681,18 @@
     "view_detail": "View Detail",
     "select_pickup_store": "Select Pick Up Store"
   },
+  "shipping_location_selector": {
+    "title": "Choose your location",
+    "description": "We will show delivery conditions based on your selected region and district.",
+    "default_label": "Select location",
+    "region_label": "Region",
+    "region_placeholder": "Choose your region",
+    "comuna_label": "District",
+    "comuna_placeholder": "Choose your district",
+    "helper_text": "Select a region first. Then we will show only the districts that belong to it.",
+    "save": "Save location",
+    "empty": "There are no active regions or districts configured yet."
+  },
   "engraving": {
     "default_text": "Engraving option"
   },

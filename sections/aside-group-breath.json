@@ -315,6 +315,10 @@
         "color_text_button_hover_dark": "rgba(0,0,0,0)"
       }
     },
+    "shipping-location-selector": {
+      "type": "shipping-location-selector",
+      "settings": {}
+    },
     "popup_promotion_WgfNMK": {
       "type": "popup-promotion",
       "blocks": {
@@ -460,6 +464,7 @@
   "order": [
     "product-labels-and-badges",
     "quick-view",
+    "shipping-location-selector",
     "popup_promotion_WgfNMK",
     "popup-age-verification",
     "cookie-banner"

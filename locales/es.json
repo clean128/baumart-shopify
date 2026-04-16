@@ -681,6 +681,18 @@
     "view_detail": "Ver detalle",
     "select_pickup_store": "Seleccionar tienda de recogida"
   },
+  "shipping_location_selector": {
+    "title": "Ingresa tu ubicación",
+    "description": "Te mostraremos las condiciones de entrega según la región y comuna seleccionadas.",
+    "default_label": "Selecciona tu comuna",
+    "region_label": "Región",
+    "region_placeholder": "Elige tu región",
+    "comuna_label": "Comuna",
+    "comuna_placeholder": "Elige tu comuna",
+    "helper_text": "Primero selecciona una región. Luego mostraremos solo las comunas que pertenecen a ella.",
+    "save": "Guardar ubicación",
+    "empty": "Aún no hay regiones o comunas activas configuradas."
+  },
   "engraving": {
     "default_text": "Opción de grabado"
   },
