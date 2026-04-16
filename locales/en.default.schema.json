@@ -601,6 +601,10 @@
     },
     "shipping_delivery": {
       "name": "Shipping and delivery",
+      "comuna_shipping_logic": {
+        "label": "Enable comuna shipping logic",
+        "info": "Foundation toggle for comuna-based shipping logic. Leave this disabled until the rollout is complete."
+      },
       "free_shipping": {
         "header": {
           "content": "Free shipping"

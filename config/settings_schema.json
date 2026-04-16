@@ -2444,6 +2444,13 @@
       },
       {
         "type": "checkbox",
+        "id": "enable_comuna_shipping_logic",
+        "default": false,
+        "label": "t:settings_schema.shipping_delivery.comuna_shipping_logic.label",
+        "info": "t:settings_schema.shipping_delivery.comuna_shipping_logic.info"
+      },
+      {
+        "type": "checkbox",
         "id": "enable_free_shipping",
         "default": false,
         "label": "t:settings_schema.shipping_delivery.free_shipping.enable_bar.label"

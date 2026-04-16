@@ -189,6 +189,7 @@
     ],
     "enable_free_shipping": true,
     "order_amount_freeshipping": "80000",
+    "enable_comuna_shipping_logic": false,
     "enable_estimate_shipping": true,
     "auto_calculate_shipping": true,
     "show_estimate_cart": true,

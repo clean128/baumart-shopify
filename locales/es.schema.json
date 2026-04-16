@@ -601,6 +601,10 @@
     },
     "shipping_delivery": {
       "name": "Envío y entrega",
+      "comuna_shipping_logic": {
+        "label": "Habilitar lógica de envío por comuna",
+        "info": "Interruptor base para la lógica de envío por comuna. Mantenlo desactivado hasta completar el despliegue."
+      },
       "free_shipping": {
         "header": {
           "content": "Envío gratuito"
