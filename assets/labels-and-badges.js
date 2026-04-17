@@ -2,6 +2,7 @@ requestAnimationFrame(() => {
   document.addEventListener('alpine:init', () => {
     Alpine.store('xBadges', {
       loadingEl: new Set(),
+      initialized: false,
       fixedPositionTemplate: `<div
         class="x-badge-{label-id} x-badge-container pointer-events-none{container-img-class} ltr"
         {preview-show-condition}
@@ -80,6 +81,12 @@ requestAnimationFrame(() => {
       </div>`,
       previewActiveBlock: window.xBadgesPreviewActiveBlock,
       init() {
+        if (this.initialized) {
+          return;
+        }
+
+        this.initialized = true;
+
         if (Shopify.designMode) {
           document.addEventListener('shopify:block:select', (event) => {
             if (!event.target.classList.contains('x-badges-block-preview')) return;
@@ -90,6 +97,10 @@ requestAnimationFrame(() => {
             document.dispatchEvent(new CustomEvent("eurus:badges:block-select"));
           });
         }
+
+        document.addEventListener('baumart:shipping-location-changed', () => {
+          this.refreshComunaShippingBadges();
+        });
       },
       load(el, callback = () => {}, container = null, productCard = false, isByob = false) {
         if (this.loadingEl.has(el)) return;
@@ -115,6 +126,8 @@ requestAnimationFrame(() => {
         this.loadingEl.delete(el);
       },
       doLoad(el, productCard, callback = () => {}) {
+        this.init();
+        this.cacheLabelsDataSource(el);
         this.initAllLabels(el, productCard);
 
         if (Shopify.designMode) {
@@ -129,7 +142,8 @@ requestAnimationFrame(() => {
         callback(el);
       },
       initAllLabels(el, productCard) {
-          let productDatas = xParseJSON(el.getAttribute('x-labels-data'));
+          const labelsDataSource = this.cacheLabelsDataSource(el);
+          let productDatas = xParseJSON(labelsDataSource);
           let allLabels = document.getElementsByClassName('x-badges-block-data');
 
           if (!productDatas) return;
@@ -142,6 +156,24 @@ requestAnimationFrame(() => {
                 currentLabels[0].remove();
               }
             }
+          } else {
+            let currentLabels = el.getElementsByClassName('x-badge-container');
+            while (currentLabels?.length > 0) {
+              currentLabels[0].remove();
+            }
+
+            [productDatas.teleport_dest_image, productDatas.teleport_dest_price].forEach((selector) => {
+              if (!selector) {
+                return;
+              }
+
+              const target = document.querySelector(selector);
+              let teleportedLabels = target?.getElementsByClassName('x-badge-container');
+
+              while (teleportedLabels?.length > 0) {
+                teleportedLabels[0].remove();
+              }
+            });
           }
 
           if (productCard) {
@@ -187,6 +219,49 @@ requestAnimationFrame(() => {
 
             el.removeAttribute('x-labels-data');
           }
+
+          this.syncBadgeContainerState(el);
+      },
+      cacheLabelsDataSource(el) {
+        const current = el.getAttribute('x-labels-data');
+        const cached = el.getAttribute('data-x-labels-data-original');
+
+        if (!cached && current) {
+          el.setAttribute('data-x-labels-data-original', current);
+        }
+
+        return el.getAttribute('data-x-labels-data-original') || current || '';
+      },
+      syncBadgeContainerState(el) {
+        if (!el.classList?.contains('x-badges-product-detail')) {
+          return;
+        }
+
+        const block = el.closest('.x-block-badges');
+        const hasRenderedBadges = [...el.childNodes].some((node) => node.nodeType === 1 && node.tagName === 'DIV');
+
+        if (hasRenderedBadges) {
+          el.classList.add('min-h-[45px]');
+          block?.classList.add('mb-4', 'md:mb-5');
+          return;
+        }
+
+        el.classList.remove('min-h-[45px]');
+        block?.classList.remove('mb-4', 'md:mb-5');
+      },
+      refreshComunaShippingBadges() {
+        const badgeElements = document.querySelectorAll('[x-labels-data], [data-x-labels-data-original]');
+
+        badgeElements.forEach((el) => {
+          const labelsDataSource = this.cacheLabelsDataSource(el);
+          const productDatas = xParseJSON(labelsDataSource);
+
+          if (!productDatas) {
+            return;
+          }
+
+          this.initAllLabels(el, Array.isArray(productDatas));
+        });
       },
       appendLabel(el, label, productData) {
         if (productData.container == 'product-info') {
@@ -418,6 +493,28 @@ requestAnimationFrame(() => {
 
         return this.fixedPositionTemplate;
       },
+      normalizeText(value) {
+        return String(value || '')
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .trim()
+          .toLowerCase();
+      },
+      isComunaFreeShippingLabel(label, productData) {
+        if (label?.type !== 'text-label' || !label?.settings?.content?.includes('{custom.label1}')) {
+          return false;
+        }
+
+        const labelValue = productData?.metafield_label?.['custom.label1'];
+        return this.normalizeText(labelValue) === 'envio gratis';
+      },
+      canShowComunaFreeShippingLabel(productData) {
+        if (!window.BaumartShipping || typeof window.BaumartShipping.productQualifies !== 'function') {
+          return true;
+        }
+
+        return window.BaumartShipping.productQualifies(Number(productData?.price || 0));
+      },
       canShow(label, productData) {
         if (productData.isXBadgesPreview) {
           return true;
@@ -429,6 +526,10 @@ requestAnimationFrame(() => {
 
         if (productData.container == 'product-info' && !label.settings.show_on_product_page) {
           return false;
+        }
+
+        if (this.isComunaFreeShippingLabel(label, productData)) {
+          return this.canShowComunaFreeShippingLabel(productData);
         }
 
         if (label.type == "sale-label" && productData.compare_at_price > productData.price) {
