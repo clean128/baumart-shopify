@@ -5,6 +5,7 @@
   assign default_comuna_name = 'Santiago'
   assign default_comuna_slug = 'santiago'
   assign popup_delay_seconds = 3
+  assign global_free_shipping_threshold = 'null'
 
   if shipping_settings_entry != blank
     if shipping_settings_entry.popup_delay_seconds.value != blank
@@ -17,6 +18,9 @@
     if shipping_settings_entry.default_comuna.value != blank
       assign default_comuna_name = shipping_settings_entry.default_comuna.value.name.value | default: default_comuna_name
       assign default_comuna_slug = shipping_settings_entry.default_comuna.value.slug.value | default: default_comuna_slug
+    endif
+    if shipping_settings_entry.global_free_shipping_threshold.value != blank
+      assign global_free_shipping_threshold = shipping_settings_entry.global_free_shipping_threshold.value
     endif
   endif
 
@@ -34,6 +38,7 @@
           "name": {{ region.name.value | json }},
           "slug": {{ region.slug.value | json }},
           "active": true,
+          "default_free_shipping_threshold": {{ region.default_free_shipping_threshold.value | default: 'null' }},
           "sort_order": {{ region.sort_order.value | default: forloop.index | json }}
         }
         {%- assign has_region = true -%}
@@ -53,6 +58,7 @@
           "name": {{ comuna.name.value | json }},
           "slug": {{ comuna.slug.value | json }},
           "region_slug": {{ region_reference.slug.value | json }},
+          "free_shipping_threshold_override": {{ comuna.free_shipping_threshold_override.value | default: 'null' }},
           "active": true
         }
         {%- assign has_comuna = true -%}
@@ -72,6 +78,7 @@
       "comuna_name": {{ default_comuna_name | json }},
       "comuna_slug": {{ default_comuna_slug | json }}
     },
+    "global_free_shipping_threshold": {{ global_free_shipping_threshold }},
     "regions": {{ regions_json | strip }},
     "comunas": {{ comunas_json | strip }}
   }
@@ -276,8 +283,8 @@
             {% render 'icon-alls', icon: 'icon-store-selector', animation_class: 'icon-animation' %}
           </span>
           <span class="shipping-location-selector-launcher__label text-left rtl:text-right leading-tight">
-            <span x-show="!$store.xShippingLocationSelector?.selected" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
-            <span x-show="$store.xShippingLocationSelector?.selected" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
+            <span x-show="!$store.xShippingLocationSelector?.hasExplicitSelection()" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
+            <span x-show="$store.xShippingLocationSelector?.hasExplicitSelection()" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
           </span>
           <span class="block w-2 h-2 min-w-[8px] min-h-[8px] self-center">{% render 'icon-alls', icon: 'icon-caret' %}</span>
         </button>
@@ -297,8 +304,8 @@
             <span class="flex flex-row items-center gap-2.5 text-left rtl:text-right">
               <span class="block w-5 h-5 min-w-5 min-h-5">{% render 'icon-alls', icon: 'icon-store-selector' %}</span>
               <span class="shipping-location-selector-launcher__label leading-tight">
-                <span x-show="!$store.xShippingLocationSelector?.selected" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
-                <span x-show="$store.xShippingLocationSelector?.selected" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
+                <span x-show="!$store.xShippingLocationSelector?.hasExplicitSelection()" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
+                <span x-show="$store.xShippingLocationSelector?.hasExplicitSelection()" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
               </span>
             </span>
             <span class="block w-2 h-2 min-w-[8px] min-h-[8px] self-center">{% render 'icon-alls', icon: 'icon-caret' %}</span>
