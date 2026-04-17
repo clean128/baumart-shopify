@@ -22,13 +22,21 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         hasLocations: false,
         explicitSelection: null,
         cartSyncTimer: null,
+        initialized: false,
+        rawPayload: '{}',
+        catalogRefreshAttempts: 0,
+        maxCatalogRefreshAttempts: 20,
 
         init(sectionId) {
           const payloadEl = document.getElementById(`ShippingLocationSelectorData-${sectionId}`);
           if (!payloadEl) return;
 
           this.sectionId = sectionId;
-          this.parsePayload(payloadEl.textContent || '{}');
+          this.catalogRefreshAttempts = 0;
+          this.rawPayload = payloadEl.textContent || '{}';
+          this.parsePayload(this.rawPayload);
+          this.hydrateFromCatalog();
+          this.scheduleCatalogRefresh();
 
           if (!this.enabled) {
             this.resetState();
@@ -36,11 +44,13 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           }
 
           this.validateExplicitSelection();
+          this.initialized = true;
           this.queueCartSync(this.getSelectedLocation(), this.hasSavedSelection() ? 'saved' : 'default');
         },
 
         parsePayload(rawPayload) {
           let payload = {};
+          const catalog = window.BaumartShippingCatalog || {};
 
           try {
             payload = JSON.parse(rawPayload);
@@ -51,15 +61,25 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           this.enabled = Boolean(payload.enabled);
           this.designMode = Boolean(payload.design_mode);
           this.popupDelaySeconds = Number(payload.popup_delay_seconds) || 3;
-          this.defaults = payload.defaults || this.defaults;
+          this.defaults = payload.defaults || catalog.defaults || this.defaults;
           this.globalFreeShippingThreshold = this.normalizeThreshold(payload.global_free_shipping_threshold);
 
-          const regions = Array.isArray(payload.regions) ? payload.regions : [];
+          const payloadRegions = Array.isArray(payload.regions) ? payload.regions : [];
+          const payloadRegionMap = new Map(
+            payloadRegions
+              .filter((region) => region && region.slug)
+              .map((region) => [region.slug, region])
+          );
+          const regions = Array.isArray(catalog.regions) && catalog.regions.length > 0 ? catalog.regions : payloadRegions;
+
           this.regions = regions
             .filter((region) => region && region.slug && region.active !== false)
             .map((region) => ({
               ...region,
-              default_free_shipping_threshold: this.normalizeThreshold(region.default_free_shipping_threshold)
+              ...payloadRegionMap.get(region.slug),
+              default_free_shipping_threshold: this.normalizeThreshold(
+                payloadRegionMap.get(region.slug)?.default_free_shipping_threshold ?? region.default_free_shipping_threshold
+              )
             }))
             .sort((first, second) => {
               const firstOrder = Number(first.sort_order) || 999;
@@ -73,19 +93,30 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             });
 
           const activeRegionSlugs = new Set(this.regions.map((region) => region.slug));
-          const comunas = Array.isArray(payload.comunas) ? payload.comunas : [];
+          const payloadComunas = Array.isArray(payload.comunas) ? payload.comunas : [];
+          const payloadComunaMap = new Map(
+            payloadComunas
+              .filter((comuna) => comuna && comuna.slug)
+              .map((comuna) => [comuna.slug, comuna])
+          );
+          const comunas = Array.isArray(catalog.comunas) && catalog.comunas.length > 0 ? catalog.comunas : payloadComunas;
 
           this.comunas = comunas
             .filter((comuna) => {
+              const overlay = payloadComunaMap.get(comuna.slug) || {};
+              const merged = { ...comuna, ...overlay };
               return comuna
-                && comuna.slug
-                && comuna.region_slug
-                && comuna.active !== false
-                && activeRegionSlugs.has(comuna.region_slug);
+                && merged.slug
+                && merged.region_slug
+                && merged.active !== false
+                && activeRegionSlugs.has(merged.region_slug);
             })
             .map((comuna) => ({
               ...comuna,
-              free_shipping_threshold_override: this.normalizeThreshold(comuna.free_shipping_threshold_override)
+              ...payloadComunaMap.get(comuna.slug),
+              free_shipping_threshold_override: this.normalizeThreshold(
+                payloadComunaMap.get(comuna.slug)?.free_shipping_threshold_override ?? comuna.free_shipping_threshold_override
+              )
             }))
             .sort((first, second) => String(first.name || '').localeCompare(String(second.name || ''), 'es'));
 
@@ -102,9 +133,61 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           return Number.isFinite(normalizedValue) ? normalizedValue : null;
         },
 
+        hasCatalog() {
+          return Boolean(
+            window.BaumartShippingCatalog
+            && Array.isArray(window.BaumartShippingCatalog.regions)
+            && Array.isArray(window.BaumartShippingCatalog.comunas)
+            && window.BaumartShippingCatalog.regions.length > 0
+            && window.BaumartShippingCatalog.comunas.length > 0
+          );
+        },
+
+        needsCatalogHydration() {
+          if (!this.hasCatalog()) {
+            return false;
+          }
+
+          const defaultLocation = this.buildLocationFromSlugs(
+            this.defaults.region_slug,
+            this.defaults.comuna_slug
+          );
+
+          return !defaultLocation
+            || this.comunas.length < window.BaumartShippingCatalog.comunas.length
+            || this.regions.length < window.BaumartShippingCatalog.regions.length;
+        },
+
+        hydrateFromCatalog() {
+          if (!this.needsCatalogHydration()) {
+            return;
+          }
+
+          this.parsePayload(this.rawPayload);
+          this.validateExplicitSelection();
+        },
+
+        scheduleCatalogRefresh() {
+          if (!this.enabled || this.hasCatalog() || this.catalogRefreshAttempts >= this.maxCatalogRefreshAttempts) {
+            if (this.hasCatalog()) {
+              this.hydrateFromCatalog();
+            }
+            return;
+          }
+
+          this.catalogRefreshAttempts += 1;
+
+          window.setTimeout(() => {
+            this.scheduleCatalogRefresh();
+          }, 150);
+        },
+
         resetState() {
           this.clearCartSyncTimer();
+          this.initialized = false;
           this.explicitSelection = null;
+          this.rawPayload = '{}';
+          this.catalogRefreshAttempts = 0;
           localStorage.removeItem(this.storageKey);
         },
 
@@ -171,6 +254,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         },
 
         getDefaultLocation() {
+          this.hydrateFromCatalog();
           const location = this.buildLocationFromSlugs(
             this.defaults.region_slug,
             this.defaults.comuna_slug
@@ -197,6 +281,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         },
 
         getSelectedLocation() {
+          this.hydrateFromCatalog();
           return this.explicitSelection || this.getDefaultLocation();
         },
 
@@ -326,6 +411,21 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           };
 
           document.dispatchEvent(new CustomEvent('baumart:shipping-location-changed', { detail }));
+        },
+
+        ensureInitialized() {
+          if (this.initialized) {
+            return true;
+          }
+
+          const payloadEl = document.querySelector('[id^="ShippingLocationSelectorData-"]');
+          if (!payloadEl) {
+            return false;
+          }
+
+          const sectionId = payloadEl.id.replace('ShippingLocationSelectorData-', '');
+          this.init(sectionId);
+          return this.initialized;
         }
       });
 
@@ -477,15 +577,19 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
 
       window.BaumartShipping = {
         getSelectedLocation() {
+          Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getSelectedLocation();
         },
         getResolvedThreshold() {
+          Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getResolvedThreshold();
         },
         productQualifies(price) {
+          Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').productQualifies(price);
         },
         getRemaining(cartTotal) {
+          Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getRemaining(cartTotal);
         }
       };

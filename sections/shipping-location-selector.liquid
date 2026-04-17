@@ -1,5 +1,5 @@
 {% liquid
-  assign shipping_settings_entry = shop.metaobjects.shipping_settings.values.first
+  assign shipping_settings_entry = metaobjects.shipping_settings.values.first
   assign default_region_name = 'Región Metropolitana de Santiago'
   assign default_region_slug = 'region-metropolitana-de-santiago'
   assign default_comuna_name = 'Santiago'
@@ -24,8 +24,8 @@
     endif
   endif
 
-  assign region_entries = shop.metaobjects.shipping_region.values
-  assign comuna_entries = shop.metaobjects.shipping_comuna.values
+  assign region_entries = metaobjects.shipping_region.values
+  assign comuna_entries = metaobjects.shipping_comuna.values
 %}
 
 {%- capture regions_json -%}
@@ -48,23 +48,25 @@
 {%- endcapture -%}
 
 {%- capture comunas_json -%}
-  [
-    {%- assign has_comuna = false -%}
-    {%- for comuna in comuna_entries -%}
-      {%- assign region_reference = comuna.region.value -%}
-      {%- if comuna.active.value != false and region_reference != blank and region_reference.active.value != false -%}
-        {%- if has_comuna -%},{%- endif -%}
-        {
-          "name": {{ comuna.name.value | json }},
-          "slug": {{ comuna.slug.value | json }},
-          "region_slug": {{ region_reference.slug.value | json }},
-          "free_shipping_threshold_override": {{ comuna.free_shipping_threshold_override.value | default: 'null' }},
-          "active": true
-        }
-        {%- assign has_comuna = true -%}
-      {%- endif -%}
-    {%- endfor -%}
-  ]
+  {% paginate comuna_entries by 250 %}
+    [
+      {%- assign has_comuna = false -%}
+      {%- for comuna in comuna_entries -%}
+        {%- assign region_reference = comuna.region.value -%}
+        {%- if comuna.active.value != false and region_reference != blank and region_reference.active.value != false -%}
+          {%- if has_comuna -%},{%- endif -%}
+          {
+            "name": {{ comuna.name.value | json }},
+            "slug": {{ comuna.slug.value | json }},
+            "region_slug": {{ region_reference.slug.value | json }},
+            "free_shipping_threshold_override": {{ comuna.free_shipping_threshold_override.value | default: 'null' }},
+            "active": true
+          }
+          {%- assign has_comuna = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    ]
+  {% endpaginate %}
 {%- endcapture -%}
 
 {%- capture selector_payload -%}
@@ -219,7 +221,7 @@
                       @change="$store.xShippingLocationSelector?.onRegionChange($event.target.value)"
                     >
                       <option value="">{{ 'shipping_location_selector.region_placeholder' | t }}</option>
-                      <template x-for="region in $store.xShippingLocationSelector?.regions" :key="region.slug">
+                      <template x-for="region in $store.xShippingLocation?.regions" :key="region.slug">
                         <option :value="region.slug" x-text="region.name"></option>
                       </template>
                     </select>
@@ -316,6 +318,7 @@
   </template>
 </div>
 
+<script src="{{ 'shipping-location-catalog.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'shipping-location-selector.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
