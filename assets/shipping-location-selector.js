@@ -307,9 +307,15 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         },
 
         formatTemplate(template, replacements = {}) {
-          return Object.entries(replacements).reduce((output, [key, value]) => (
-            output.replaceAll(`__${String(key).toUpperCase()}__`, String(value ?? ''))
-          ), String(template || ''));
+          return Object.entries(replacements).reduce((output, [key, value]) => {
+            const token = String(key || '');
+            const normalizedValue = String(value ?? '');
+
+            return output
+              .replaceAll(`__${token}__`, normalizedValue)
+              .replaceAll(`__${token.toLowerCase()}__`, normalizedValue)
+              .replaceAll(`__${token.toUpperCase()}__`, normalizedValue);
+          }, String(template || ''));
         },
 
         getMessagingContext(location = this.getSelectedLocation()) {
