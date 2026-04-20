@@ -1,0 +1,98 @@
+{% liquid
+  assign bootstrap_id = bootstrap_id | default: 'global'
+  assign include_assets = include_assets | default: false
+  assign shipping_settings_entry = metaobjects.shipping_settings.values.first
+  assign default_region_name = 'Región Metropolitana de Santiago'
+  assign default_region_slug = 'region-metropolitana-de-santiago'
+  assign default_comuna_name = 'Santiago'
+  assign default_comuna_slug = 'santiago'
+  assign popup_delay_seconds = 3
+  assign global_free_shipping_threshold = 'null'
+
+  if shipping_settings_entry != blank
+    if shipping_settings_entry.popup_delay_seconds.value != blank
+      assign popup_delay_seconds = shipping_settings_entry.popup_delay_seconds.value
+    endif
+    if shipping_settings_entry.default_region.value != blank
+      assign default_region_name = shipping_settings_entry.default_region.value.name.value | default: default_region_name
+      assign default_region_slug = shipping_settings_entry.default_region.value.slug.value | default: default_region_slug
+    endif
+    if shipping_settings_entry.default_comuna.value != blank
+      assign default_comuna_name = shipping_settings_entry.default_comuna.value.name.value | default: default_comuna_name
+      assign default_comuna_slug = shipping_settings_entry.default_comuna.value.slug.value | default: default_comuna_slug
+    endif
+    if shipping_settings_entry.global_free_shipping_threshold.value != blank
+      assign global_free_shipping_threshold = shipping_settings_entry.global_free_shipping_threshold.value
+    endif
+  endif
+
+  assign region_entries = metaobjects.shipping_region.values
+  assign comuna_entries = metaobjects.shipping_comuna.values
+%}
+
+{%- capture regions_json -%}
+  [
+    {%- assign has_region = false -%}
+    {%- for region in region_entries -%}
+      {%- if region.active.value != false -%}
+        {%- if has_region -%},{%- endif -%}
+        {
+          "name": {{ region.name.value | json }},
+          "slug": {{ region.slug.value | json }},
+          "active": true,
+          "default_free_shipping_threshold": {{ region.default_free_shipping_threshold.value | default: 'null' }},
+          "sort_order": {{ region.sort_order.value | default: forloop.index | json }}
+        }
+        {%- assign has_region = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+{%- endcapture -%}
+
+{%- capture comunas_json -%}
+  {% paginate comuna_entries by 250 %}
+    [
+      {%- assign has_comuna = false -%}
+      {%- for comuna in comuna_entries -%}
+        {%- assign region_reference = comuna.region.value -%}
+        {%- if comuna.active.value != false and region_reference != blank and region_reference.active.value != false -%}
+          {%- if has_comuna -%},{%- endif -%}
+          {
+            "name": {{ comuna.name.value | json }},
+            "slug": {{ comuna.slug.value | json }},
+            "region_slug": {{ region_reference.slug.value | json }},
+            "free_shipping_threshold_override": {{ comuna.free_shipping_threshold_override.value | default: 'null' }},
+            "active": true
+          }
+          {%- assign has_comuna = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    ]
+  {% endpaginate %}
+{%- endcapture -%}
+
+{%- capture selector_payload -%}
+  {
+    "enabled": {{ settings.enable_comuna_shipping_logic | json }},
+    "design_mode": {{ request.design_mode | json }},
+    "popup_delay_seconds": {{ popup_delay_seconds | json }},
+    "defaults": {
+      "region_name": {{ default_region_name | json }},
+      "region_slug": {{ default_region_slug | json }},
+      "comuna_name": {{ default_comuna_name | json }},
+      "comuna_slug": {{ default_comuna_slug | json }}
+    },
+    "global_free_shipping_threshold": {{ global_free_shipping_threshold }},
+    "regions": {{ regions_json | strip }},
+    "comunas": {{ comunas_json | strip }}
+  }
+{%- endcapture -%}
+
+<script type="application/json" id="ShippingLocationSelectorData-{{ bootstrap_id }}">
+  {{ selector_payload | strip }}
+</script>
+
+{%- if include_assets -%}
+  <script src="{{ 'shipping-location-catalog.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'shipping-location-selector.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}

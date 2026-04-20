@@ -272,6 +272,9 @@
       {%- if settings.countdown_timer_message -%}
         <script src="{{ 'cart-countdown-timer.js' | asset_url }}" defer></script>
       {%- endif -%}
+      {%- if settings.enable_comuna_shipping_logic -%}
+        {% render 'shipping-location-bootstrap', bootstrap_id: 'global', include_assets: true %}
+      {%- endif -%}
       <script src="{{ 'theme.js' | asset_url }}" defer></script>
       <script src="{{ 'variant-select-card.js' | asset_url }}" defer></script>
       <script src="{{ 'vendors.js' | asset_url }}" defer></script>

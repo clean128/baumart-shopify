@@ -2,7 +2,13 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
   window.Eurus.loadedScript.add('shipping-location-selector.js');
 
   requestAnimationFrame(() => {
-    document.addEventListener('alpine:init', () => {
+    const registerShippingLocation = () => {
+      if (!window.Alpine || typeof Alpine.store !== 'function' || window.BaumartShippingRegistered) {
+        return Boolean(window.BaumartShippingRegistered);
+      }
+
+      window.BaumartShippingRegistered = true;
+
       Alpine.store('xShippingLocation', {
         storageKey: 'baumartShippingLocationSelection',
         cartSyncDelayMs: 350,
@@ -593,6 +599,218 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           return Alpine.store('xShippingLocation').getRemaining(cartTotal);
         }
       };
-    });
+
+      window.BaumartComunaFreeShipping = window.BaumartComunaFreeShipping || {};
+      if (!window.BaumartComunaFreeShipping.initialized) {
+        window.BaumartComunaFreeShipping.initialized = true;
+        window.BaumartComunaFreeShipping.broadcast = function(syncCartTotal) {
+          document.querySelectorAll('[data-comuna-freeshipping]').forEach((element) => {
+            element.dispatchEvent(new CustomEvent('baumart:freeshipping:update', {
+              detail: { syncCartTotal }
+            }));
+          });
+        };
+
+        document.addEventListener('baumart:shipping-location-changed', () => {
+          window.BaumartComunaFreeShipping.broadcast(false);
+        });
+
+        document.addEventListener('eurus:cart:items-changed', () => {
+          window.BaumartComunaFreeShipping.broadcast(true);
+        });
+      }
+
+      window.xComunaFreeShippingBar = window.xComunaFreeShippingBar || ((config) => ({
+        cartTotal: Number(config.cartTotal) || 0,
+        moneyFormat: config.moneyFormat,
+        freeShippingEnabled: Boolean(config.freeShippingEnabled),
+        freegiftThreshold: config.freegiftThreshold === null ? null : Number(config.freegiftThreshold),
+        otherOfferName: config.otherOfferName || '',
+        translations: config.translations || {},
+        freeShippingThreshold: null,
+        amountToFreeShipping: null,
+        amountToFreegift: null,
+        showFreeShipping: false,
+        showFreegift: false,
+        canRender: false,
+        showPendingState: false,
+        showCombinedSuccess: false,
+        showFreeShippingSuccess: false,
+        showFreegiftSuccess: false,
+        progressPercent: 0,
+        isRtl: document.documentElement.getAttribute('dir') === 'rtl',
+        helperRetryCount: 0,
+        maxHelperRetryCount: 12,
+
+        init() {
+          this.refresh();
+          this.$el.addEventListener('baumart:freeshipping:update', async (event) => {
+            if (event.detail && event.detail.syncCartTotal) {
+              await this.refreshCartTotal();
+            }
+
+            this.refresh();
+          });
+        },
+
+        normalizeThreshold(value) {
+          if (value === null || value === undefined || value === '' || value === false) {
+            return null;
+          }
+
+          const normalizedValue = Number(value);
+          return Number.isFinite(normalizedValue) ? normalizedValue : null;
+        },
+
+        async refreshCartTotal() {
+          try {
+            const response = await fetch(`${Shopify.routes.root}cart.js`, {
+              headers: { Accept: 'application/json' }
+            });
+
+            if (!response.ok) {
+              return;
+            }
+
+            const cart = await response.json();
+            this.cartTotal = Number(cart.total_price || 0) / 100;
+          } catch (error) {
+          }
+        },
+
+        resolveFreeShippingThreshold() {
+          if (window.BaumartShipping && typeof window.BaumartShipping.getResolvedThreshold === 'function') {
+            return this.normalizeThreshold(window.BaumartShipping.getResolvedThreshold());
+          }
+
+          if (this.helperRetryCount < this.maxHelperRetryCount) {
+            this.helperRetryCount += 1;
+            window.setTimeout(() => this.refresh(), 150);
+          }
+
+          return null;
+        },
+
+        refresh() {
+          this.freeShippingThreshold = this.resolveFreeShippingThreshold();
+          this.showFreeShipping = this.freeShippingEnabled && this.freeShippingThreshold !== null;
+          this.showFreegift = this.freegiftThreshold !== null;
+          this.canRender = this.showFreeShipping || this.showFreegift;
+
+          if (!this.canRender) {
+            this.amountToFreeShipping = null;
+            this.amountToFreegift = null;
+            this.progressPercent = 0;
+            this.showPendingState = false;
+            this.showCombinedSuccess = false;
+            this.showFreeShippingSuccess = false;
+            this.showFreegiftSuccess = false;
+            return;
+          }
+
+          this.amountToFreeShipping = this.showFreeShipping ? this.freeShippingThreshold - this.cartTotal : null;
+          this.amountToFreegift = this.showFreegift ? this.freegiftThreshold - this.cartTotal : null;
+
+          const freeShippingPending = this.showFreeShipping && this.amountToFreeShipping > 0;
+          const freegiftPending = this.showFreegift && this.amountToFreegift > 0;
+
+          this.showPendingState = freeShippingPending || freegiftPending;
+          this.showCombinedSuccess = this.showFreeShipping && this.showFreegift && !freeShippingPending && !freegiftPending;
+          this.showFreeShippingSuccess = this.showFreeShipping && !freeShippingPending && !this.showCombinedSuccess;
+          this.showFreegiftSuccess = this.showFreegift && !freegiftPending && !this.showCombinedSuccess;
+          this.progressPercent = this.getProgressPercent();
+        },
+
+        getBaseThreshold() {
+          return Math.max(
+            this.showFreeShipping ? this.freeShippingThreshold : 0,
+            this.showFreegift ? this.freegiftThreshold : 0
+          );
+        },
+
+        getProgressPercent() {
+          const baseThreshold = this.getBaseThreshold();
+          if (!baseThreshold) {
+            return 0;
+          }
+
+          return Math.max(Math.min((this.cartTotal / baseThreshold) * 100, 100), 0);
+        },
+
+        formatMoneyAmount(amount) {
+          if (!window.Alpine || !Alpine.store('xHelper')) {
+            return amount;
+          }
+
+          return Alpine.store('xHelper').formatMoney(Math.round(Math.max(amount, 0) * 100), this.moneyFormat);
+        },
+
+        getFreeShippingMessage() {
+          if (!this.showFreeShipping) {
+            return '';
+          }
+
+          if (this.amountToFreeShipping > 0) {
+            return this.translations.enableAmountFreeShipping.replace('__amount__', this.formatMoneyAmount(this.amountToFreeShipping));
+          }
+
+          return this.translations.freeShipping;
+        },
+
+        getFreegiftMessage() {
+          if (!this.showFreegift) {
+            return '';
+          }
+
+          if (this.amountToFreegift > 0) {
+            return this.translations.enableAmountFreegift.replace('__amount__', this.formatMoneyAmount(this.amountToFreegift));
+          }
+
+          return this.translations.freegift;
+        },
+
+        getMarkerPosition(threshold) {
+          const baseThreshold = this.getBaseThreshold();
+          if (!baseThreshold || threshold === null) {
+            return 100;
+          }
+
+          return Math.min((threshold / baseThreshold) * 100, 100);
+        },
+
+        getMarkerStyle(threshold) {
+          const position = this.getMarkerPosition(threshold);
+          return `${this.isRtl ? 'right' : 'left'}: ${position}%;`;
+        },
+
+        getWrapperPaddingClass() {
+          return this.showFreeShipping && this.showFreegift
+            ? 'pt-3 pb-7 pl-4 pr-8 rtl:pr-4 rtl:pl-8'
+            : 'pt-3 pb-3 pl-4 pr-4';
+        }
+      }));
+
+      window.xComunaFreeShippingBarFromConfig = window.xComunaFreeShippingBarFromConfig || ((configId) => {
+        let config = {};
+
+        if (configId) {
+          const configElement = document.getElementById(configId);
+          if (configElement?.textContent) {
+            try {
+              config = JSON.parse(configElement.textContent);
+            } catch (error) {
+              config = {};
+            }
+          }
+        }
+
+        return window.xComunaFreeShippingBar(config);
+      });
+      return true;
+    };
+
+    if (!registerShippingLocation()) {
+      document.addEventListener('alpine:init', registerShippingLocation, { once: true });
+    }
   });
 }
