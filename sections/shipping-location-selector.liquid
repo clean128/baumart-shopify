@@ -80,6 +80,13 @@
       "comuna_name": {{ default_comuna_name | json }},
       "comuna_slug": {{ default_comuna_slug | json }}
     },
+    "translations": {
+      "default_context": {{ 'shipping_location_selector.default_context' | t: location: '__location__' | json }},
+      "selected_context": {{ 'shipping_location_selector.selected_context' | t: location: '__location__' | json }},
+      "location_with_region": {{ 'shipping_location_selector.location_with_region' | t: comuna: '__comuna__', region: '__region__' | json }},
+      "badge_context_default": {{ 'shipping_location_selector.badge_context_default' | t: location: '__location__' | json }},
+      "badge_context_selected": {{ 'shipping_location_selector.badge_context_selected' | t: location: '__location__' | json }}
+    },
     "global_free_shipping_threshold": {{ global_free_shipping_threshold }},
     "regions": {{ regions_json | strip }},
     "comunas": {{ comunas_json | strip }}
@@ -198,6 +205,11 @@
             <div>
               <div class="shipping-location-selector-modal__title font-medium h2">{{ 'shipping_location_selector.title' | t }}</div>
               <p class="shipping-location-selector-modal__text mt-2 opacity-70">{{ 'shipping_location_selector.description' | t }}</p>
+              <p
+                x-show="$store.xShippingLocationSelector?.getStatusMessage()"
+                x-text="$store.xShippingLocationSelector?.getStatusMessage()"
+                class="shipping-location-selector-modal__text mt-2 font-medium"
+              ></p>
             </div>
             <button
               type="button"
@@ -284,9 +296,17 @@
           <span class="shipping-location-selector-launcher__icon block">
             {% render 'icon-alls', icon: 'icon-store-selector', animation_class: 'icon-animation' %}
           </span>
-          <span class="shipping-location-selector-launcher__label text-left rtl:text-right leading-tight">
-            <span x-show="!$store.xShippingLocationSelector?.hasExplicitSelection()" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
-            <span x-show="$store.xShippingLocationSelector?.hasExplicitSelection()" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
+          <span class="shipping-location-selector-launcher__label text-left rtl:text-right leading-tight min-w-0 flex flex-col">
+            <span class="flex items-center gap-1.5 min-w-0">
+              <span x-text="$store.xShippingLocationSelector?.getLauncherPrimaryText()" class="font-medium truncate"></span>
+              <span
+                x-show="$store.xShippingLocationSelector?.usesDefaultFallback()"
+                class="text-[0.7em] uppercase tracking-wide opacity-70"
+              >
+                {{ 'shipping_location_selector.default_badge' | t }}
+              </span>
+            </span>
+            <span x-text="$store.xShippingLocationSelector?.getLauncherSecondaryText()" class="line-clamp-1 opacity-70"></span>
           </span>
           <span class="block w-2 h-2 min-w-[8px] min-h-[8px] self-center">{% render 'icon-alls', icon: 'icon-caret' %}</span>
         </button>
@@ -305,9 +325,17 @@
           >
             <span class="flex flex-row items-center gap-2.5 text-left rtl:text-right">
               <span class="block w-5 h-5 min-w-5 min-h-5">{% render 'icon-alls', icon: 'icon-store-selector' %}</span>
-              <span class="shipping-location-selector-launcher__label leading-tight">
-                <span x-show="!$store.xShippingLocationSelector?.hasExplicitSelection()" class="font-medium">{{ 'shipping_location_selector.default_label' | t }}</span>
-                <span x-show="$store.xShippingLocationSelector?.hasExplicitSelection()" x-text="$store.xShippingLocationSelector?.getLauncherLabel()" class="line-clamp-2"></span>
+              <span class="shipping-location-selector-launcher__label leading-tight min-w-0 flex flex-col">
+                <span class="flex items-center gap-1.5 min-w-0">
+                  <span x-text="$store.xShippingLocationSelector?.getLauncherPrimaryText()" class="font-medium truncate"></span>
+                  <span
+                    x-show="$store.xShippingLocationSelector?.usesDefaultFallback()"
+                    class="text-[0.7em] uppercase tracking-wide opacity-70"
+                  >
+                    {{ 'shipping_location_selector.default_badge' | t }}
+                  </span>
+                </span>
+                <span x-text="$store.xShippingLocationSelector?.getLauncherSecondaryText()" class="line-clamp-1 opacity-70"></span>
               </span>
             </span>
             <span class="block w-2 h-2 min-w-[8px] min-h-[8px] self-center">{% render 'icon-alls', icon: 'icon-caret' %}</span>

@@ -22,6 +22,13 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           comuna_name: '',
           comuna_slug: ''
         },
+        translations: {
+          default_context: 'Showing delivery conditions for __location__',
+          selected_context: 'Delivery conditions for __location__',
+          location_with_region: '__comuna__, __region__',
+          badge_context_default: 'Ref. __location__',
+          badge_context_selected: '__location__'
+        },
         regions: [],
         comunas: [],
         globalFreeShippingThreshold: null,
@@ -68,6 +75,10 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           this.designMode = Boolean(payload.design_mode);
           this.popupDelaySeconds = Number(payload.popup_delay_seconds) || 3;
           this.defaults = payload.defaults || catalog.defaults || this.defaults;
+          this.translations = {
+            ...this.translations,
+            ...(payload.translations || {})
+          };
           this.globalFreeShippingThreshold = this.normalizeThreshold(payload.global_free_shipping_threshold);
 
           const payloadRegions = Array.isArray(payload.regions) ? payload.regions : [];
@@ -289,6 +300,44 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         getSelectedLocation() {
           this.hydrateFromCatalog();
           return this.explicitSelection || this.getDefaultLocation();
+        },
+
+        isUsingDefaultFallback() {
+          return !this.hasSavedSelection() && Boolean(this.getDefaultLocation());
+        },
+
+        formatTemplate(template, replacements = {}) {
+          return Object.entries(replacements).reduce((output, [key, value]) => (
+            output.replaceAll(`__${String(key).toUpperCase()}__`, String(value ?? ''))
+          ), String(template || ''));
+        },
+
+        getMessagingContext(location = this.getSelectedLocation()) {
+          if (!location) {
+            return null;
+          }
+
+          const isDefaultFallback = this.isUsingDefaultFallback();
+          const fullLocationLabel = this.formatTemplate(this.translations.location_with_region, {
+            comuna: location.comunaName,
+            region: location.regionName
+          });
+
+          return {
+            location,
+            isDefaultFallback,
+            primaryLocationLabel: location.comunaName,
+            regionLabel: location.regionName,
+            fullLocationLabel,
+            contextMessage: this.formatTemplate(
+              isDefaultFallback ? this.translations.default_context : this.translations.selected_context,
+              { location: location.comunaName }
+            ),
+            badgeContext: this.formatTemplate(
+              isDefaultFallback ? this.translations.badge_context_default : this.translations.badge_context_selected,
+              { location: location.comunaName }
+            )
+          };
         },
 
         canRender() {
@@ -572,12 +621,26 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         },
 
         getLauncherLabel() {
-          const location = Alpine.store('xShippingLocation').getSelectedLocation();
-          if (!location) {
-            return '';
-          }
+          return this.getLauncherPrimaryText();
+        },
 
-          return `${location.comunaName}, ${location.regionName}`;
+        getLauncherPrimaryText() {
+          const context = Alpine.store('xShippingLocation').getMessagingContext();
+          return context ? context.primaryLocationLabel : '';
+        },
+
+        getLauncherSecondaryText() {
+          const context = Alpine.store('xShippingLocation').getMessagingContext();
+          return context ? context.regionLabel : '';
+        },
+
+        usesDefaultFallback() {
+          return Alpine.store('xShippingLocation').isUsingDefaultFallback();
+        },
+
+        getStatusMessage() {
+          const context = Alpine.store('xShippingLocation').getMessagingContext();
+          return context ? context.contextMessage : '';
         }
       });
 
@@ -597,6 +660,10 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         getRemaining(cartTotal) {
           Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getRemaining(cartTotal);
+        },
+        getMessagingContext() {
+          Alpine.store('xShippingLocation').ensureInitialized();
+          return Alpine.store('xShippingLocation').getMessagingContext();
         }
       };
 
@@ -637,6 +704,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         showCombinedSuccess: false,
         showFreeShippingSuccess: false,
         showFreegiftSuccess: false,
+        locationContextMessage: '',
         progressPercent: 0,
         isRtl: document.documentElement.getAttribute('dir') === 'rtl',
         helperRetryCount: 0,
@@ -696,6 +764,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           this.showFreeShipping = this.freeShippingEnabled && this.freeShippingThreshold !== null;
           this.showFreegift = this.freegiftThreshold !== null;
           this.canRender = this.showFreeShipping || this.showFreegift;
+          this.locationContextMessage = this.getLocationContextMessage();
 
           if (!this.canRender) {
             this.amountToFreeShipping = null;
@@ -719,6 +788,14 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           this.showFreeShippingSuccess = this.showFreeShipping && !freeShippingPending && !this.showCombinedSuccess;
           this.showFreegiftSuccess = this.showFreegift && !freegiftPending && !this.showCombinedSuccess;
           this.progressPercent = this.getProgressPercent();
+        },
+
+        getLocationContextMessage() {
+          if (!window.BaumartShipping || typeof window.BaumartShipping.getMessagingContext !== 'function') {
+            return '';
+          }
+
+          return window.BaumartShipping.getMessagingContext()?.contextMessage || '';
         },
 
         getBaseThreshold() {

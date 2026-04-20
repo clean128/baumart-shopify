@@ -82,6 +82,13 @@
       "comuna_name": {{ default_comuna_name | json }},
       "comuna_slug": {{ default_comuna_slug | json }}
     },
+    "translations": {
+      "default_context": {{ 'shipping_location_selector.default_context' | t: location: '__location__' | json }},
+      "selected_context": {{ 'shipping_location_selector.selected_context' | t: location: '__location__' | json }},
+      "location_with_region": {{ 'shipping_location_selector.location_with_region' | t: comuna: '__comuna__', region: '__region__' | json }},
+      "badge_context_default": {{ 'shipping_location_selector.badge_context_default' | t: location: '__location__' | json }},
+      "badge_context_selected": {{ 'shipping_location_selector.badge_context_selected' | t: location: '__location__' | json }}
+    },
     "global_free_shipping_threshold": {{ global_free_shipping_threshold }},
     "regions": {{ regions_json | strip }},
     "comunas": {{ comunas_json | strip }}

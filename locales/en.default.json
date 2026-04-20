@@ -691,7 +691,13 @@
     "comuna_placeholder": "Choose your district",
     "helper_text": "Select a region first. Then we will show only the districts that belong to it.",
     "save": "Save location",
-    "empty": "There are no active regions or districts configured yet."
+    "empty": "There are no active regions or districts configured yet.",
+    "default_badge": "Default",
+    "default_context": "Showing delivery conditions for __location__ by default.",
+    "selected_context": "Delivery conditions for __location__.",
+    "location_with_region": "__comuna__, __region__",
+    "badge_context_default": "Ref. __location__",
+    "badge_context_selected": "__location__"
   },
   "engraving": {
     "default_text": "Engraving option"

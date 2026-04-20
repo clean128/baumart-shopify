@@ -358,6 +358,15 @@ requestAnimationFrame(() => {
               content = content.replace(`{${key}}`, value);
             });
           }
+          const comunaShippingContext = this.isComunaFreeShippingLabel(label, productData)
+            ? this.getComunaFreeShippingContext()
+            : '';
+          const contentMarkup = comunaShippingContext.length > 0
+            ? `<span class="w-fit flex flex-col">
+                <span class="leading-normal p-break-words">${content}</span>
+                <span class="leading-tight text-[0.82em] opacity-80">${comunaShippingContext}</span>
+              </span>`
+            : `<span class="leading-normal w-fit p-break-words">${content}</span>`;
           const sizeClass = productData.container == 'product-info' ? '' : ` pt-1 pb-1 pl-2 pr-2`;
           const inlineStyle = productData.container == 'product-info' ? '' : `style="font-size: var(--font-size-scale);"`;
           const inlineStyleIcon = productData.container == 'product-info' ? '' : `style="height: var(--font-size-scale); width: var(--font-size-scale); min-width: var(--font-size-scale);"`;
@@ -366,7 +375,7 @@ requestAnimationFrame(() => {
                 x-ref="content"
                 class='x-badge-content ltr x-badge-text select-none inline-flex justify-center${sizeClass} items-center{css-opacity}{css-type} gap-2'
                 ${inlineStyle}
-              ><span class="icon-label empty:hidden" ${inlineStyleIcon}>${label.settings.icon}</span><span class="leading-normal w-fit p-break-words">${content}</span></div>` : false;
+              ><span class="icon-label empty:hidden" ${inlineStyleIcon}>${label.settings.icon}</span>${contentMarkup}</div>` : false;
 
           if (countDown.length > 0 && label.settings.schedule_enabled) {
             Alpine.store('xHelper').countdown(label.settings, function(canShow, seconds, minutes, hours, days) {
@@ -514,6 +523,13 @@ requestAnimationFrame(() => {
         }
 
         return window.BaumartShipping.productQualifies(Number(productData?.price || 0));
+      },
+      getComunaFreeShippingContext() {
+        if (!window.BaumartShipping || typeof window.BaumartShipping.getMessagingContext !== 'function') {
+          return '';
+        }
+
+        return window.BaumartShipping.getMessagingContext()?.badgeContext || '';
       },
       canShow(label, productData) {
         if (productData.isXBadgesPreview) {

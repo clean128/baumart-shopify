@@ -691,7 +691,13 @@
     "comuna_placeholder": "Elige tu comuna",
     "helper_text": "Primero selecciona una región. Luego mostraremos solo las comunas que pertenecen a ella.",
     "save": "Guardar ubicación",
-    "empty": "Aún no hay regiones o comunas activas configuradas."
+    "empty": "Aún no hay regiones o comunas activas configuradas.",
+    "default_badge": "Por defecto",
+    "default_context": "Mostrando condiciones de entrega para __location__ por defecto.",
+    "selected_context": "Condiciones de entrega para __location__.",
+    "location_with_region": "__comuna__, __region__",
+    "badge_context_default": "Ref. __location__",
+    "badge_context_selected": "__location__"
   },
   "engraving": {
     "default_text": "Opción de grabado"
