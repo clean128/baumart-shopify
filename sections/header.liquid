@@ -291,6 +291,7 @@
           {% comment %} Mobile header layout: logo left, menu right{% endcomment %}
           {% if section.settings.mobile_header_layout == 'left-right' %}
             <div class="flex justify-end lg:order-4 [grid-area:icons] -mr-2{% unless logo_above %} pb-header{% endunless %}">
+              <div class="x-header-store-selector-mobile-container flex md:hidden self-center mr-1"></div>
               {% assign sidebar_blocks = section.blocks | where: 'type', 'sidebar_content' %}
               {% if section.settings.enable_sidebar and sidebar_blocks.size > 0 %}
                 <div x-data="{show: false}" class="x-header-sidebar flex items-center">
@@ -518,6 +519,7 @@
             {%- if section.settings.mobile_header_layout == 'center-right' %} flex-row-reverse lg:flex-row{% endif -%}
             {%- if section.settings.mobile_header_layout == 'left-right' %} hidden lg:flex{% else %} flex{% endif -%}"
         >
+          <div class="x-header-store-selector-mobile-container flex md:hidden self-center mr-1"></div>
           <div class="x-header-store-selector-container self-center md:block hidden md:mr-2.5 md:ml-3"></div>
           {% assign sidebar_blocks = section.blocks | where: 'type', 'sidebar_content' %}
           {% if section.settings.enable_sidebar and sidebar_blocks.size > 0 %}
