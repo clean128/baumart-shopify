@@ -8,6 +8,12 @@
   assign default_comuna_slug = 'santiago'
   assign popup_delay_seconds = 3
   assign global_free_shipping_threshold = 'null'
+  assign request_region_slug = request.params.baumart_region_slug | default: default_region_slug
+  assign request_comuna_slug = request.params.baumart_comuna_slug | default: default_comuna_slug
+  assign request_region_entry = blank
+  assign request_comuna_entry = blank
+  assign selected_resolution_source = nil
+  assign selected_resolution_threshold = 'null'
 
   if shipping_settings_entry != blank
     if shipping_settings_entry.popup_delay_seconds.value != blank
@@ -24,6 +30,20 @@
     if shipping_settings_entry.global_free_shipping_threshold.value != blank
       assign global_free_shipping_threshold = shipping_settings_entry.global_free_shipping_threshold.value
     endif
+  endif
+
+  assign request_region_entry = metaobjects.shipping_region[request_region_slug]
+  assign request_comuna_entry = metaobjects.shipping_comuna[request_comuna_slug]
+
+  if request_comuna_entry != blank and request_comuna_entry.active.value != false and request_comuna_entry.region.value != blank and request_comuna_entry.region.value.slug.value == request_region_slug and request_comuna_entry.free_shipping_threshold_override.value != blank
+    assign selected_resolution_source = 'comuna_override'
+    assign selected_resolution_threshold = request_comuna_entry.free_shipping_threshold_override.value
+  elsif request_region_entry != blank and request_region_entry.active.value != false and request_region_entry.default_free_shipping_threshold.value != blank
+    assign selected_resolution_source = 'region_default'
+    assign selected_resolution_threshold = request_region_entry.default_free_shipping_threshold.value
+  elsif global_free_shipping_threshold != 'null'
+    assign selected_resolution_source = 'global_default'
+    assign selected_resolution_threshold = global_free_shipping_threshold
   endif
 
   assign region_entries = metaobjects.shipping_region.values
@@ -88,6 +108,12 @@
       "location_with_region": {{ 'shipping_location_selector.location_with_region' | t: comuna: '__comuna__', region: '__region__' | json }},
       "badge_context_default": {{ 'shipping_location_selector.badge_context_default' | t: location: '__location__' | json }},
       "badge_context_selected": {{ 'shipping_location_selector.badge_context_selected' | t: location: '__location__' | json }}
+    },
+    "selected_resolution": {
+      "region_slug": {{ request_region_slug | json }},
+      "comuna_slug": {{ request_comuna_slug | json }},
+      "threshold": {{ selected_resolution_threshold }},
+      "source": {{ selected_resolution_source | json }}
     },
     "global_free_shipping_threshold": {{ global_free_shipping_threshold }},
     "regions": {{ regions_json | strip }},

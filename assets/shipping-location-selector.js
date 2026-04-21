@@ -32,6 +32,8 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         regions: [],
         comunas: [],
         globalFreeShippingThreshold: null,
+        resolvedThresholdLookup: {},
+        pendingResolutionRequests: [],
         hasLocations: false,
         explicitSelection: null,
         cartSyncTimer: null,
@@ -80,6 +82,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             ...(payload.translations || {})
           };
           this.globalFreeShippingThreshold = this.normalizeThreshold(payload.global_free_shipping_threshold);
+          this.consumeResolvedThresholdPayload(payload.selected_resolution);
 
           const payloadRegions = Array.isArray(payload.regions) ? payload.regions : [];
           const payloadRegionMap = new Map(
@@ -94,6 +97,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             .map((region) => ({
               ...region,
               ...payloadRegionMap.get(region.slug),
+              has_payload_data: payloadRegionMap.has(region.slug),
               default_free_shipping_threshold: this.normalizeThreshold(
                 payloadRegionMap.get(region.slug)?.default_free_shipping_threshold ?? region.default_free_shipping_threshold
               )
@@ -131,6 +135,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             .map((comuna) => ({
               ...comuna,
               ...payloadComunaMap.get(comuna.slug),
+              has_payload_data: payloadComunaMap.has(comuna.slug),
               free_shipping_threshold_override: this.normalizeThreshold(
                 payloadComunaMap.get(comuna.slug)?.free_shipping_threshold_override ?? comuna.free_shipping_threshold_override
               )
@@ -205,7 +210,37 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           this.explicitSelection = null;
           this.rawPayload = '{}';
           this.catalogRefreshAttempts = 0;
+          this.resolvedThresholdLookup = {};
+          this.pendingResolutionRequests = [];
           localStorage.removeItem(this.storageKey);
+        },
+
+        getResolutionLookupKey(location) {
+          if (!location?.regionSlug || !location?.comunaSlug) {
+            return null;
+          }
+
+          return `${location.regionSlug}::${location.comunaSlug}`;
+        },
+
+        consumeResolvedThresholdPayload(resolution) {
+          if (!resolution || !resolution.region_slug || !resolution.comuna_slug) {
+            return;
+          }
+
+          const key = this.getResolutionLookupKey({
+            regionSlug: resolution.region_slug,
+            comunaSlug: resolution.comuna_slug
+          });
+
+          if (!key) {
+            return;
+          }
+
+          this.resolvedThresholdLookup[key] = {
+            threshold: this.normalizeThreshold(resolution.threshold),
+            source: resolution.source || null
+          };
         },
 
         clearCartSyncTimer() {
@@ -366,26 +401,135 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           return true;
         },
 
-        getResolvedThreshold(location = this.getSelectedLocation()) {
-          if (!location) {
-            return this.globalFreeShippingThreshold;
+        buildResolutionRequestUrl(location) {
+          const url = new URL(window.location.href);
+          url.searchParams.set('baumart_region_slug', location.regionSlug);
+          url.searchParams.set('baumart_comuna_slug', location.comunaSlug);
+          return url.toString();
+        },
+
+        extractResolutionPayloadFromHtml(htmlText) {
+          const parser = new DOMParser();
+          const html = parser.parseFromString(htmlText, 'text/html');
+          const payloadEl = html.getElementById('ShippingLocationSelectorData-global');
+
+          if (!payloadEl) {
+            return null;
           }
 
-          const comuna = this.getComunaBySlug(location.comunaSlug);
+          try {
+            const payload = JSON.parse(payloadEl.textContent || '{}');
+            return payload.selected_resolution || null;
+          } catch (error) {
+            return null;
+          }
+        },
+
+        async fetchResolvedThresholdForLocation(location) {
+          const lookupKey = this.getResolutionLookupKey(location);
+          if (!lookupKey || this.pendingResolutionRequests.includes(lookupKey)) {
+            return;
+          }
+
+          this.pendingResolutionRequests.push(lookupKey);
+
+          try {
+            const response = await fetch(this.buildResolutionRequestUrl(location), {
+              headers: { Accept: 'text/html' }
+            });
+
+            if (!response.ok) {
+              return;
+            }
+
+            const htmlText = await response.text();
+            const resolution = this.extractResolutionPayloadFromHtml(htmlText);
+            this.consumeResolvedThresholdPayload(resolution);
+
+            document.dispatchEvent(new CustomEvent('baumart:shipping-threshold-resolved', {
+              detail: {
+                location,
+                resolvedThreshold: this.getResolvedThreshold(location)
+              }
+            }));
+          } catch (error) {
+          } finally {
+            this.pendingResolutionRequests = this.pendingResolutionRequests.filter((item) => item !== lookupKey);
+          }
+        },
+
+        getResolvedThresholdDetails(location = this.getSelectedLocation()) {
+          const region = location ? this.getRegionBySlug(location.regionSlug) : null;
+          const comuna = location ? this.getComunaBySlug(location.comunaSlug) : null;
+          const lookupKey = this.getResolutionLookupKey(location);
+          const resolvedLookup = lookupKey ? this.resolvedThresholdLookup[lookupKey] : null;
+
+          if (resolvedLookup) {
+            return {
+              threshold: resolvedLookup.threshold,
+              source: resolvedLookup.source,
+              region,
+              comuna,
+              location
+            };
+          }
+
+          if (comuna && !comuna.has_payload_data) {
+            this.fetchResolvedThresholdForLocation(location);
+            return {
+              threshold: null,
+              source: null,
+              region,
+              comuna,
+              location
+            };
+          }
+
           if (comuna && comuna.free_shipping_threshold_override !== null) {
-            return comuna.free_shipping_threshold_override;
+            return {
+              threshold: comuna.free_shipping_threshold_override,
+              source: 'comuna_override',
+              region,
+              comuna,
+              location
+            };
           }
 
-          const region = this.getRegionBySlug(location.regionSlug);
           if (region && region.default_free_shipping_threshold !== null) {
-            return region.default_free_shipping_threshold;
+            return {
+              threshold: region.default_free_shipping_threshold,
+              source: 'region_default',
+              region,
+              comuna,
+              location
+            };
           }
 
-          return this.globalFreeShippingThreshold;
+          if (this.globalFreeShippingThreshold !== null) {
+            return {
+              threshold: this.globalFreeShippingThreshold,
+              source: 'global_default',
+              region,
+              comuna,
+              location
+            };
+          }
+
+          return {
+            threshold: null,
+            source: null,
+            region,
+            comuna,
+            location
+          };
+        },
+
+        getResolvedThreshold(location = this.getSelectedLocation()) {
+          return this.getResolvedThresholdDetails(location).threshold;
         },
 
         productQualifies(price, location = this.getSelectedLocation()) {
-          const threshold = this.getResolvedThreshold(location);
+          const { threshold } = this.getResolvedThresholdDetails(location);
           if (threshold === null) {
             return false;
           }
@@ -394,7 +538,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         },
 
         getRemaining(cartTotal, location = this.getSelectedLocation()) {
-          const threshold = this.getResolvedThreshold(location);
+          const { threshold } = this.getResolvedThresholdDetails(location);
           if (threshold === null) {
             return null;
           }
@@ -655,6 +799,10 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getSelectedLocation();
         },
+        getResolvedThresholdDetails() {
+          Alpine.store('xShippingLocation').ensureInitialized();
+          return Alpine.store('xShippingLocation').getResolvedThresholdDetails();
+        },
         getResolvedThreshold() {
           Alpine.store('xShippingLocation').ensureInitialized();
           return Alpine.store('xShippingLocation').getResolvedThreshold();
@@ -673,6 +821,8 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         }
       };
 
+      document.dispatchEvent(new CustomEvent('baumart:shipping-engine-ready'));
+
       window.BaumartComunaFreeShipping = window.BaumartComunaFreeShipping || {};
       if (!window.BaumartComunaFreeShipping.initialized) {
         window.BaumartComunaFreeShipping.initialized = true;
@@ -685,6 +835,10 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         };
 
         document.addEventListener('baumart:shipping-location-changed', () => {
+          window.BaumartComunaFreeShipping.broadcast(false);
+        });
+
+        document.addEventListener('baumart:shipping-threshold-resolved', () => {
           window.BaumartComunaFreeShipping.broadcast(false);
         });
 

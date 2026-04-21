@@ -98,6 +98,14 @@ requestAnimationFrame(() => {
           });
         }
 
+        document.addEventListener('baumart:shipping-engine-ready', () => {
+          this.refreshComunaShippingBadges();
+        });
+
+        document.addEventListener('baumart:shipping-threshold-resolved', () => {
+          this.refreshComunaShippingBadges();
+        });
+
         document.addEventListener('baumart:shipping-location-changed', () => {
           this.refreshComunaShippingBadges();
         });
@@ -302,6 +310,7 @@ requestAnimationFrame(() => {
       processContent(el, label, productData) {
         let content = false;
         const canShow = this.canShow(label, productData);
+        const isComunaFreeShippingLabel = this.isComunaFreeShippingLabel(label, productData);
 
         if (label.settings.image && canShow) {
           /** image label */
@@ -353,12 +362,20 @@ requestAnimationFrame(() => {
                       .replace(/{price}/gi, productData.price_with_currency)
                       .replace(/{count_down}/gi, countDown);
 
-          if (productData.metafield_label) {
-            Object.entries(productData.metafield_label).forEach(([key, value]) => {
+          const metafieldLabelData = {
+            ...(productData.metafield_label || {})
+          };
+
+          if (isComunaFreeShippingLabel) {
+            metafieldLabelData['custom.label1'] = 'Envio gratis';
+          }
+
+          if (Object.keys(metafieldLabelData).length > 0) {
+            Object.entries(metafieldLabelData).forEach(([key, value]) => {
               content = content.replace(`{${key}}`, value);
             });
           }
-          const comunaShippingContext = this.isComunaFreeShippingLabel(label, productData)
+          const comunaShippingContext = isComunaFreeShippingLabel
             ? this.getComunaFreeShippingContext()
             : '';
           const contentMarkup = comunaShippingContext.length > 0
@@ -503,7 +520,9 @@ requestAnimationFrame(() => {
         return this.fixedPositionTemplate;
       },
       normalizeText(value) {
-        return String(value || '')
+        const normalizedInput = Array.isArray(value) ? value.join(', ') : value;
+
+        return String(normalizedInput || '')
           .normalize('NFD')
           .replace(/[\u0300-\u036f]/g, '')
           .trim()
@@ -519,10 +538,32 @@ requestAnimationFrame(() => {
       },
       canShowComunaFreeShippingLabel(productData) {
         if (!window.BaumartShipping || typeof window.BaumartShipping.productQualifies !== 'function') {
-          return true;
+          return false;
         }
 
-        return window.BaumartShipping.productQualifies(Number(productData?.price || 0));
+        const productPriceInPesos = this.getComparableProductPrice(productData);
+
+        return window.BaumartShipping.productQualifies(productPriceInPesos);
+      },
+      getComparableProductPrice(productData) {
+        const rawPrice = Number(productData?.price || 0);
+        const formattedPrice = this.parseDisplayedPrice(productData?.price_with_currency);
+
+        if (formattedPrice !== null) {
+          return formattedPrice;
+        }
+
+        return rawPrice;
+      },
+      parseDisplayedPrice(value) {
+        const digitsOnly = String(value || '').replace(/\D/g, '');
+
+        if (!digitsOnly.length) {
+          return null;
+        }
+
+        const normalizedValue = Number(digitsOnly);
+        return Number.isFinite(normalizedValue) ? normalizedValue : null;
       },
       getComunaFreeShippingContext() {
         if (!window.BaumartShipping || typeof window.BaumartShipping.getMessagingContext !== 'function') {

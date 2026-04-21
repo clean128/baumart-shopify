@@ -122,10 +122,25 @@
               for metafield_label in metafield_labels
                 assign mtf_key = metafield_label | remove: ' ' | split: '.'
                 assign mtf_value = variant.metafields[mtf_key.first][mtf_key.last]
-                if mtf_value == blank or mtf_value.type != 'single_line_text_field'
+                if mtf_value != blank
+                  if mtf_value.type == 'single_line_text_field'
+                    assign mtf_value = mtf_value.value
+                  elsif mtf_value.type == 'list.single_line_text_field'
+                    assign mtf_value = mtf_value.value | join: ', '
+                  else
+                    assign mtf_value = blank
+                  endif
+                endif
+                if mtf_value == blank
                   assign mtf_value = card_product.metafields[mtf_key.first][mtf_key.last]
-                  if mtf_value != blank and mtf_value.type != 'single_line_text_field'
-                    assign mtf_value = ''
+                  if mtf_value != blank
+                    if mtf_value.type == 'single_line_text_field'
+                      assign mtf_value = mtf_value.value
+                    elsif mtf_value.type == 'list.single_line_text_field'
+                      assign mtf_value = mtf_value.value | join: ', '
+                    else
+                      assign mtf_value = ''
+                    endif
                   endif
                 endif
                 if forloop.last
