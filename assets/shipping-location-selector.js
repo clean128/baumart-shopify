@@ -45,9 +45,13 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
         init(sectionId) {
           const payloadEl = document.getElementById(`ShippingLocationSelectorData-${sectionId}`);
           if (!payloadEl) return;
+          const globalPayloadEl = document.getElementById('ShippingLocationSelectorData-global');
 
           this.sectionId = sectionId;
           this.catalogRefreshAttempts = 0;
+          if (globalPayloadEl && globalPayloadEl !== payloadEl) {
+            this.parsePayload(globalPayloadEl.textContent || '{}');
+          }
           this.rawPayload = payloadEl.textContent || '{}';
           this.parsePayload(this.rawPayload);
           this.hydrateFromCatalog();
@@ -81,7 +85,10 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             ...this.translations,
             ...(payload.translations || {})
           };
-          this.globalFreeShippingThreshold = this.normalizeThreshold(payload.global_free_shipping_threshold);
+          const incomingGlobalThreshold = this.normalizeThreshold(payload.global_free_shipping_threshold);
+          if (incomingGlobalThreshold !== null || this.globalFreeShippingThreshold === null) {
+            this.globalFreeShippingThreshold = incomingGlobalThreshold;
+          }
           this.consumeResolvedThresholdPayload(payload.selected_resolution);
 
           const payloadRegions = Array.isArray(payload.regions) ? payload.regions : [];
@@ -464,7 +471,7 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           const lookupKey = this.getResolutionLookupKey(location);
           const resolvedLookup = lookupKey ? this.resolvedThresholdLookup[lookupKey] : null;
 
-          if (resolvedLookup) {
+          if (resolvedLookup && (resolvedLookup.source !== null || resolvedLookup.threshold !== null)) {
             return {
               threshold: resolvedLookup.threshold,
               source: resolvedLookup.source,
@@ -476,13 +483,6 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
 
           if (comuna && !comuna.has_payload_data) {
             this.fetchResolvedThresholdForLocation(location);
-            return {
-              threshold: null,
-              source: null,
-              region,
-              comuna,
-              location
-            };
           }
 
           if (comuna && comuna.free_shipping_threshold_override !== null) {
@@ -623,7 +623,8 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
             return true;
           }
 
-          const payloadEl = document.querySelector('[id^="ShippingLocationSelectorData-"]');
+          const payloadEl = document.getElementById('ShippingLocationSelectorData-global')
+            || document.querySelector('[id^="ShippingLocationSelectorData-"]');
           if (!payloadEl) {
             return false;
           }

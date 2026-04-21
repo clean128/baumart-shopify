@@ -1,5 +1,5 @@
 {% liquid
-  assign shipping_settings_entry = metaobjects.shipping_settings.values.first
+  assign shipping_settings_entry = metaobjects.shipping_settings['shipping-settings'] | default: metaobjects.shipping_settings.values.first
   assign default_region_name = 'Región Metropolitana de Santiago'
   assign default_region_slug = 'region-metropolitana-de-santiago'
   assign default_comuna_name = 'Santiago'
