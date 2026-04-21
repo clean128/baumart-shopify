@@ -100,10 +100,11 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
           const regions = Array.isArray(catalog.regions) && catalog.regions.length > 0 ? catalog.regions : payloadRegions;
 
           this.regions = regions
-            .filter((region) => region && region.slug && region.active !== false)
+            .filter((region) => region && region.slug && this.normalizeBoolean(payloadRegionMap.get(region.slug)?.active ?? region.active, true))
             .map((region) => ({
               ...region,
               ...payloadRegionMap.get(region.slug),
+              active: this.normalizeBoolean(payloadRegionMap.get(region.slug)?.active ?? region.active, true),
               has_payload_data: payloadRegionMap.has(region.slug),
               default_free_shipping_threshold: this.normalizeThreshold(
                 payloadRegionMap.get(region.slug)?.default_free_shipping_threshold ?? region.default_free_shipping_threshold
@@ -136,12 +137,13 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
               return comuna
                 && merged.slug
                 && merged.region_slug
-                && merged.active !== false
+                && this.normalizeBoolean(merged.active, true)
                 && activeRegionSlugs.has(merged.region_slug);
             })
             .map((comuna) => ({
               ...comuna,
               ...payloadComunaMap.get(comuna.slug),
+              active: this.normalizeBoolean(payloadComunaMap.get(comuna.slug)?.active ?? comuna.active, true),
               has_payload_data: payloadComunaMap.has(comuna.slug),
               free_shipping_threshold_override: this.normalizeThreshold(
                 payloadComunaMap.get(comuna.slug)?.free_shipping_threshold_override ?? comuna.free_shipping_threshold_override
@@ -160,6 +162,37 @@ if (!window.Eurus.loadedScript.has('shipping-location-selector.js')) {
 
           const normalizedValue = Number(value);
           return Number.isFinite(normalizedValue) ? normalizedValue : null;
+        },
+
+        normalizeBoolean(value, fallback = false) {
+          if (value === null || value === undefined || value === '') {
+            return fallback;
+          }
+
+          if (typeof value === 'boolean') {
+            return value;
+          }
+
+          if (typeof value === 'string') {
+            const normalizedValue = value.trim().toLowerCase();
+            if (normalizedValue === 'true' || normalizedValue === '1') {
+              return true;
+            }
+            if (normalizedValue === 'false' || normalizedValue === '0') {
+              return false;
+            }
+          }
+
+          if (typeof value === 'number') {
+            if (value === 1) {
+              return true;
+            }
+            if (value === 0) {
+              return false;
+            }
+          }
+
+          return Boolean(value);
         },
 
         hasCatalog() {

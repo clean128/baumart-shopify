@@ -54,17 +54,19 @@
   [
     {%- assign has_region = false -%}
     {%- for region in region_entries -%}
-      {%- if region.active.value != false -%}
-        {%- if has_region -%},{%- endif -%}
-        {
-          "name": {{ region.name.value | json }},
-          "slug": {{ region.slug.value | json }},
-          "active": true,
-          "default_free_shipping_threshold": {{ region.default_free_shipping_threshold.value | default: 'null' }},
-          "sort_order": {{ region.sort_order.value | default: forloop.index | json }}
-        }
-        {%- assign has_region = true -%}
+      {%- assign region_active = true -%}
+      {%- if region.active.value == false -%}
+        {%- assign region_active = false -%}
       {%- endif -%}
+      {%- if has_region -%},{%- endif -%}
+      {
+        "name": {{ region.name.value | json }},
+        "slug": {{ region.slug.value | json }},
+        "active": {{ region_active | json }},
+        "default_free_shipping_threshold": {{ region.default_free_shipping_threshold.value | default: 'null' }},
+        "sort_order": {{ region.sort_order.value | default: forloop.index | json }}
+      }
+      {%- assign has_region = true -%}
     {%- endfor -%}
   ]
 {%- endcapture -%}
@@ -75,14 +77,18 @@
       {%- assign has_comuna = false -%}
       {%- for comuna in comuna_entries -%}
         {%- assign region_reference = comuna.region.value -%}
-        {%- if comuna.active.value != false and region_reference != blank and region_reference.active.value != false -%}
+        {%- assign comuna_active = true -%}
+        {%- if comuna.active.value == false -%}
+          {%- assign comuna_active = false -%}
+        {%- endif -%}
+        {%- if region_reference != blank -%}
           {%- if has_comuna -%},{%- endif -%}
           {
             "name": {{ comuna.name.value | json }},
             "slug": {{ comuna.slug.value | json }},
             "region_slug": {{ region_reference.slug.value | json }},
             "free_shipping_threshold_override": {{ comuna.free_shipping_threshold_override.value | default: 'null' }},
-            "active": true
+            "active": {{ comuna_active | json }}
           }
           {%- assign has_comuna = true -%}
         {%- endif -%}
