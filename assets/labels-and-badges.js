@@ -537,6 +537,10 @@ requestAnimationFrame(() => {
         return this.normalizeText(labelValue) === 'envio gratis';
       },
       canShowComunaFreeShippingLabel(productData) {
+        if (!this.isComunaShippingLogicEnabled()) {
+          return false;
+        }
+
         if (!window.BaumartShipping || typeof window.BaumartShipping.productQualifies !== 'function') {
           return false;
         }
@@ -565,7 +569,26 @@ requestAnimationFrame(() => {
         const normalizedValue = Number(digitsOnly);
         return Number.isFinite(normalizedValue) ? normalizedValue : null;
       },
+      isComunaShippingLogicEnabled() {
+        const payloadEl = document.getElementById('ShippingLocationSelectorData-global')
+          || document.querySelector('[id^="ShippingLocationSelectorData-"]');
+
+        if (!payloadEl) {
+          return false;
+        }
+
+        try {
+          const payload = JSON.parse(payloadEl.textContent || '{}');
+          return Boolean(payload.enabled);
+        } catch (error) {
+          return false;
+        }
+      },
       getComunaFreeShippingContext() {
+        if (!this.isComunaShippingLogicEnabled()) {
+          return '';
+        }
+
         if (!window.BaumartShipping || typeof window.BaumartShipping.getMessagingContext !== 'function') {
           return '';
         }
