@@ -538,7 +538,7 @@ requestAnimationFrame(() => {
       },
       canShowComunaFreeShippingLabel(productData) {
         if (!this.isComunaShippingLogicEnabled()) {
-          return false;
+          return true;
         }
 
         if (!window.BaumartShipping || typeof window.BaumartShipping.productQualifies !== 'function') {
