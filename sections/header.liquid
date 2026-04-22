@@ -294,7 +294,7 @@
               <div class="x-header-store-selector-mobile-container flex md:hidden self-center mr-1"></div>
               {% assign sidebar_blocks = section.blocks | where: 'type', 'sidebar_content' %}
               {% if section.settings.enable_sidebar and sidebar_blocks.size > 0 %}
-                <div x-data="{show: false}" class="x-header-sidebar flex items-center">
+                <div x-data="{show: false}" class="x-header-sidebar hidden md:flex items-center">
                   {% if section.settings.icon_header_sidebar != 'none' %}
                     {% unless section.settings.custom_image_header_sidebar == blank and section.settings.custom_icon_header_sidebar == blank and section.settings.another_icon_header_sidebar == blank and section.settings.icon_header_sidebar == 'another_icon' %}
                       <span @click="show = true" class="relative w-11 h-10 px-3 pt-2.5 pb-2 cursor-pointer{% if section.settings.custom_image_header_sidebar != blank %} animate-Xpulse skeleton-image{% endif %}">
@@ -352,7 +352,7 @@
               {%- if shop.customer_accounts_enabled -%}
                 <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
                   aria-label="{{ 'customer.log_in' | t }}"
-                  class="header-icon-account hidden lg:flex relative items-center justify-center"
+                  class="header-icon-account flex relative items-center justify-center"
                 >
                   <span class="w-11 h-10 pl-3 pr-2.5 pt-2.5 pb-2">
                     {% render 'icon-alls', icon: 'icon-account', animation_class: 'icon-animation' %}
@@ -390,7 +390,7 @@
               {%- endunless -%}
               {%- if settings.theme_mode_enabled -%}
                 {%- if settings.theme_mode_mode == 'switch' -%}
-                  <theme-mode x-data class="{% unless show_theme_mode_on_header %}hidden md:flex {% else %}flex {% endunless %}{% if settings.icon_options == 'classic' %}w-10{% else %}{% unless settings.hide_cart %}ml-1{% else %}ml-2 {% endunless %} {% unless settings.hide_cart and settings.search_enabled == false %}border-l border-solid h-fit self-center{% endunless %}{% endif %} md:w-10 items-center lg:justify-center cursor-pointer{% if section.settings.mobile_header_layout == 'center-right' %} justify-start{% else %} justify-end{% endif %}">
+                  <theme-mode x-data class="hidden md:flex {% if settings.icon_options == 'classic' %}w-10{% else %}{% unless settings.hide_cart %}ml-1{% else %}ml-2 {% endunless %} {% unless settings.hide_cart and settings.search_enabled == false %}border-l border-solid h-fit self-center{% endunless %}{% endif %} md:w-10 items-center lg:justify-center cursor-pointer{% if section.settings.mobile_header_layout == 'center-right' %} justify-start{% else %} justify-end{% endif %}">
                     <button
                       @click.prevent="$store.xDarkMode.toggleThemeMode(); $store.xHeaderMenu.handleChangeThemeMode();"
                       class="lg:pt-2.5 lg:pb-2.5 md:pr-2.5 pl-2.5 {% if settings.icon_options == 'classic' %}button button-action pt-2.5 pb-2.5 pl-2.5 pr-2.5 rounded-full{% endif %} text-sm {% if settings.icon_options == "modern" %}{% if section.settings.mobile_header_layout == 'left-right' %}md:mr-0{% endif %}{% endif %}"                      
@@ -523,7 +523,7 @@
           <div class="x-header-store-selector-container self-center md:block hidden md:mr-2.5 md:ml-3"></div>
           {% assign sidebar_blocks = section.blocks | where: 'type', 'sidebar_content' %}
           {% if section.settings.enable_sidebar and sidebar_blocks.size > 0 %}
-            <div x-data="{show: false}" class="x-header-sidebar flex items-center">
+            <div x-data="{show: false}" class="x-header-sidebar hidden md:flex items-center">
               {% if section.settings.icon_header_sidebar != 'none' %}
                 {% unless section.settings.custom_image_header_sidebar == blank and section.settings.custom_icon_header_sidebar == blank and section.settings.another_icon_header_sidebar == blank and section.settings.icon_header_sidebar == 'another_icon' %}
                   <span @click="show = true" class="relative w-11 h-10 px-3 pt-2.5 pb-2 cursor-pointer{% if section.settings.custom_image_header_sidebar != blank %} animate-Xpulse skeleton-image{% endif %}">
@@ -591,7 +591,7 @@
           {%- if shop.customer_accounts_enabled -%}
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
               aria-label="{{ 'customer.log_in' | t }}"
-              class="header-icon-account hidden lg:flex relative items-center justify-center">
+              class="header-icon-account flex relative items-center justify-center">
               <span class="w-11 h-10 pl-3 pr-2.5 pt-2.5 pb-2">
                 {% render 'icon-alls', icon: 'icon-account', animation_class: 'icon-animation' %}
               </span>
@@ -632,7 +632,7 @@
             {%- if settings.theme_mode_mode == 'switch' -%}
               <theme-mode x-data
                 class="flex items-center lg:justify-center cursor-pointer
-                  {%- unless show_theme_mode_on_header %} hidden md:flex{% else %} flex{% endunless -%}
+                  hidden md:flex
                   {%- if settings.icon_options == 'classic' %} w-10 lg:ml-2 rtl:lg:ml-0 rtl:lg:mr-2{% else %} md:w-fit lg:ml-5.5 rtl:lg:mr-5.5 lg:border-r-0 lg:border-l rtl:border-l-0 rtl:border-r h-fit self-center border-solid 
                     {%- if section.settings.mobile_header_layout == 'center-right' %} mr-1{% elsif section.settings.mobile_header_layout == 'center-left' %} ml-1{% endif -%}
                     {%- unless settings.hide_cart %}{% if section.settings.mobile_header_layout == 'center-right' %} border-r{% else %} border-l{% endif %}{% endunless -%}
